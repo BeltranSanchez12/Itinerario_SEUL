@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#F5EEDC">
+<title>Seúl 2026 · Itinerario familiar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Manrope:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F5EEDC;
+    --paper-deep: #EFE5CD;
+    --ink: #1F1A14;
+    --ink-soft: #4A3F2F;
+    --ink-mute: #7A6A52;
+    --bone: #E5D9BC;
+    --line: #D9CBA8;
+    --loto: #C04D2C;
+    --loto-deep: #9C3A1E;
+    --gold: #B5862A;
+    --gold-light: #E0BB68;
+    --night: #14110C;
+    --night-soft: #1F1A14;
+    --night-line: #3A3322;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Manrope', -apple-system, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.55;
+    overflow-x: hidden;
+    background-image:
+      radial-gradient(ellipse 80% 60% at 20% 10%, rgba(192,77,44,0.04), transparent 60%),
+      radial-gradient(ellipse 60% 80% at 90% 80%, rgba(181,134,42,0.05), transparent 65%),
+      radial-gradient(circle at 50% 50%, rgba(31,26,20,0.015) 0%, transparent 70%);
+  }
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.12 0 0 0 0 0.10 0 0 0 0 0.07 0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    opacity: 0.55;
+    mix-blend-mode: multiply;
+    z-index: 0;
+  }
+  main { position: relative; z-index: 1; padding-bottom: 90px; }
+
+  .display { font-family: 'Fraunces', serif; font-weight: 500; letter-spacing: -0.01em; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .kr { font-family: 'Noto Serif KR', serif; }
+
+  /* HERO */
+  .hero {
+    padding: 28px 22px 28px;
+    position: relative;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero-tag::before, .hero-tag::after {
+    content: ''; flex: 1; height: 1px; background: var(--line);
+  }
+  .hero-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(56px, 18vw, 84px);
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+    margin: 0 0 6px;
+    color: var(--ink);
+  }
+  .hero-title em {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--loto);
+    font-variation-settings: "opsz" 144;
+  }
+  .hero-kr {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 22px;
+    color: var(--ink-soft);
+    margin: 6px 0 22px;
+    letter-spacing: 0.04em;
+  }
+  .hero-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-top: 18px;
+  }
+  .hero-meta div {
+    background: var(--paper);
+    padding: 12px 14px;
+  }
+  .hero-meta .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 4px;
+  }
+  .hero-meta .val {
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    color: var(--ink);
+  }
+  .lantern {
+    position: absolute;
+    opacity: 0.55;
+    pointer-events: none;
+  }
+  .lantern.l1 { top: 28px; right: 22px; }
+  .lantern.l2 { top: 110px; right: 60px; opacity: 0.35; }
+
+  /* FESTIVAL BANNER */
+  .festival {
+    margin: 22px 18px 26px;
+    background: var(--night);
+    color: var(--paper);
+    border-radius: 4px;
+    padding: 22px 22px 24px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--night-line);
+  }
+  .festival::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(224,187,104,0.18), transparent 40%),
+      radial-gradient(circle at 85% 80%, rgba(192,77,44,0.16), transparent 45%);
+    pointer-events: none;
+  }
+  .festival-mark {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin-bottom: 12px;
+    display: flex; align-items: center; gap: 8px;
+    position: relative;
+  }
+  .festival-mark .dot {
+    width: 6px; height: 6px; background: var(--gold-light); border-radius: 50%;
+    box-shadow: 0 0 12px var(--gold-light);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse { 50% { opacity: 0.4; } }
+  .festival h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1;
+    margin: 0 0 4px;
+    letter-spacing: -0.02em;
+    position: relative;
+  }
+  .festival h2 em { font-style: italic; color: var(--gold-light); font-weight: 300; }
+  .festival .kr-sub {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 14px;
+    color: var(--gold-light);
+    opacity: 0.8;
+    margin: 6px 0 16px;
+    position: relative;
+  }
+  .festival p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: rgba(245,238,220,0.78);
+    margin: 0 0 14px;
+    position: relative;
+  }
+  .festival .route {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--gold-light);
+    position: relative;
+  }
+  .festival .route span { opacity: 0.6; }
+  .festival .when {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--paper);
+    border: 1px solid var(--gold);
+    padding: 5px 10px;
+    border-radius: 999px;
+    display: inline-block;
+    margin-top: 14px;
+    position: relative;
+    letter-spacing: 0.06em;
+  }
+
+  /* TABS */
+  .tabs-wrap {
+    position: sticky;
+    top: 0;
+    background: rgba(245,238,220,0.94);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    z-index: 50;
+  }
+  .tabs {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    padding: 10px 18px;
+    scrollbar-width: none;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    flex-shrink: 0;
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .tab .num {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .tab.active, .tab:hover {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .tab.active .num, .tab:hover .num { color: var(--gold-light); }
+  .tab.festival-tab {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .tab.festival-tab.active, .tab.festival-tab:hover {
+    background: var(--night);
+    color: var(--gold-light);
+    border-color: var(--gold);
+  }
+
+  /* DAY SECTION */
+  .day {
+    padding: 38px 22px 28px;
+    border-bottom: 1px solid var(--line);
+    scroll-margin-top: 70px;
+  }
+  .day-head { margin-bottom: 24px; }
+  .day-num {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 6px;
+  }
+  .day-num .dnum {
+    font-family: 'Fraunces', serif;
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 0.85;
+    color: var(--loto);
+    font-style: italic;
+    letter-spacing: -0.04em;
+  }
+  .day-num .dlabel {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-mute);
+  }
+  .day-num .dlabel .date { color: var(--ink); }
+  .day-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 8px 0 12px;
+    color: var(--ink);
+    text-wrap: pretty;
+  }
+  .day-summary {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.45;
+    color: var(--ink-soft);
+    border-left: 2px solid var(--loto);
+    padding-left: 14px;
+    margin: 0 0 4px;
+    text-wrap: pretty;
+  }
+
+  /* STOP CARD */
+  .stops { display: flex; flex-direction: column; gap: 22px; margin-top: 24px; }
+  .stop {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .stop-photo {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    background: linear-gradient(135deg, var(--loto) 0%, var(--gold) 100%);
+    color: var(--paper);
+  }
+  .stop-photo-fallback {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, var(--loto-deep), var(--loto) 50%, var(--gold) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--paper);
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  .stop-photo-fallback.airport {
+    background: linear-gradient(135deg, #2a2418, #4a3f2f 70%, #6a5a3f);
+  }
+  .stop-body { padding: 20px 20px 18px; }
+  .stop-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--ink);
+    background: var(--bone);
+    padding: 4px 10px;
+    border-radius: 999px;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  .stop-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    margin: 0 0 4px;
+    color: var(--ink);
+    text-wrap: pretty;
+  }
+  .stop-kr {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 16px;
+    color: var(--ink-mute);
+    margin: 0 0 14px;
+  }
+  .stop-desc {
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0 0 18px;
+    text-wrap: pretty;
+  }
+  .stop-desc strong { color: var(--ink); font-weight: 600; }
+  .stop-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s;
+    border: 1px solid var(--ink);
+  }
+  .btn.primary {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .btn.primary:active { background: var(--ink-soft); }
+  .btn.outline {
+    background: transparent;
+    color: var(--ink);
+  }
+  .btn.outline:active { background: var(--bone); }
+  .btn svg { width: 13px; height: 13px; }
+
+  /* FESTIVAL DAY (Day 5) */
+  .day.night-day {
+    background: var(--night);
+    color: var(--paper);
+    border-bottom: 1px solid var(--night-line);
+    position: relative;
+  }
+  .day.night-day::before {
+    content: '';
+    position: absolute; inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(circle at 20% 15%, rgba(224,187,104,0.10), transparent 35%),
+      radial-gradient(circle at 80% 60%, rgba(192,77,44,0.08), transparent 40%);
+  }
+  .day.night-day > * { position: relative; }
+  .day.night-day .day-num .dnum { color: var(--gold-light); }
+  .day.night-day .day-num .dlabel { color: rgba(245,238,220,0.55); }
+  .day.night-day .day-num .dlabel .date { color: var(--paper); }
+  .day.night-day .day-title { color: var(--paper); }
+  .day.night-day .day-summary {
+    color: rgba(245,238,220,0.78);
+    border-left-color: var(--gold-light);
+  }
+  .day.night-day .stop {
+    background: var(--night-soft);
+    border-color: var(--night-line);
+  }
+  .day.night-day .stop-name { color: var(--paper); }
+  .day.night-day .stop-kr { color: var(--gold-light); opacity: 0.8; }
+  .day.night-day .stop-desc { color: rgba(245,238,220,0.72); }
+  .day.night-day .stop-desc strong { color: var(--gold-light); }
+  .day.night-day .stop-time {
+    background: rgba(224,187,104,0.15);
+    color: var(--gold-light);
+  }
+  .day.night-day .btn.primary {
+    background: var(--gold-light);
+    color: var(--night);
+    border-color: var(--gold-light);
+  }
+  .day.night-day .btn.outline {
+    color: var(--gold-light);
+    border-color: var(--gold);
+  }
+
+  /* AVISOS */
+  .section {
+    padding: 44px 22px 28px;
+    border-bottom: 1px solid var(--line);
+    scroll-margin-top: 70px;
+  }
+  .section-header {
+    margin-bottom: 24px;
+  }
+  .section-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--loto);
+    margin-bottom: 10px;
+  }
+  .section-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -0.025em;
+    margin: 0;
+    color: var(--ink);
+  }
+  .section-title em { font-style: italic; font-weight: 300; }
+
+  .warning {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--loto);
+    padding: 18px 18px 18px 18px;
+    margin-bottom: 14px;
+    border-radius: 2px;
+  }
+  .warning.gold { border-left-color: var(--gold); }
+  .warning .w-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--loto);
+    margin-bottom: 6px;
+  }
+  .warning.gold .w-tag { color: var(--gold); }
+  .warning h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 19px;
+    margin: 0 0 8px;
+    line-height: 1.2;
+    color: var(--ink);
+  }
+  .warning p {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  .warning p + p { margin-top: 8px; }
+
+  /* FRASES */
+  .phrase {
+    border-bottom: 1px dotted var(--line);
+    padding: 16px 0;
+  }
+  .phrase:last-child { border-bottom: none; }
+  .phrase-es {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+  .phrase-kr {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 18px;
+    color: var(--loto);
+    margin-bottom: 4px;
+  }
+  .phrase-pron {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-mute);
+    letter-spacing: 0.02em;
+  }
+
+  /* BOTTOM NAV */
+  .bottom-nav {
+    position: fixed;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--ink);
+    border-radius: 999px;
+    padding: 8px 10px;
+    display: flex;
+    gap: 4px;
+    z-index: 100;
+    box-shadow: 0 8px 24px rgba(31,26,20,0.25), 0 2px 6px rgba(31,26,20,0.15);
+  }
+  .bottom-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    color: rgba(245,238,220,0.7);
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .bottom-nav a:active, .bottom-nav a.active {
+    background: var(--gold-light);
+    color: var(--night);
+  }
+  .bottom-nav a.festival-pin {
+    color: var(--gold-light);
+    position: relative;
+  }
+  .bottom-nav a.festival-pin::after {
+    content: '';
+    position: absolute;
+    top: 6px; right: 6px;
+    width: 5px; height: 5px;
+    background: var(--gold-light);
+    border-radius: 50%;
+    box-shadow: 0 0 6px var(--gold-light);
+  }
+
+  /* FOOTER */
+  .end {
+    text-align: center;
+    padding: 40px 22px 30px;
+    color: var(--ink-mute);
+  }
+  .end .mark {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--loto);
+    margin-bottom: 8px;
+  }
+  .end .small {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  /* ENTRANCE ANIMATION */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in {
+    animation: fadeUp 0.8s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  }
+
+  /* iPad/tablet */
+  @media (min-width: 768px) {
+    main { max-width: 540px; margin: 0 auto; box-shadow: 0 0 60px rgba(31,26,20,0.05); }
+    .hero { padding: 44px 36px 36px; }
+    .day { padding: 48px 36px 36px; }
+    .section { padding: 56px 36px 36px; }
+    .festival { margin: 26px 24px 32px; padding: 28px; }
+    .stop-photo, .stop-photo-fallback { height: 240px; }
+  }
+</style>
+</head>
+<body>
+
+<main>
+
+  <!-- HERO -->
+  <header class="hero fade-in">
+    <!-- Decorative lanterns -->
+    <svg class="lantern l1" width="34" height="48" viewBox="0 0 34 48" fill="none">
+      <line x1="17" y1="0" x2="17" y2="6" stroke="#B5862A" stroke-width="0.8"/>
+      <ellipse cx="17" cy="22" rx="13" ry="14" fill="#C04D2C" fill-opacity="0.55" stroke="#9C3A1E" stroke-width="0.8"/>
+      <line x1="4" y1="22" x2="30" y2="22" stroke="#9C3A1E" stroke-width="0.5" opacity="0.6"/>
+      <path d="M14 36 L17 44 L20 36" stroke="#B5862A" stroke-width="0.8" fill="none"/>
+    </svg>
+    <svg class="lantern l2" width="22" height="32" viewBox="0 0 22 32" fill="none">
+      <line x1="11" y1="0" x2="11" y2="4" stroke="#B5862A" stroke-width="0.6"/>
+      <ellipse cx="11" cy="14" rx="8" ry="9" fill="#B5862A" fill-opacity="0.4" stroke="#B5862A" stroke-width="0.6"/>
+      <path d="M9 23 L11 28 L13 23" stroke="#B5862A" stroke-width="0.6" fill="none"/>
+    </svg>
+
+    <div class="hero-tag">Itinerario familiar · 2026</div>
+    <h1 class="hero-title">Seúl<br><em>2026</em></h1>
+    <div class="hero-kr">서울 · 2026년 5월</div>
+
+    <div class="hero-meta">
+      <div>
+        <div class="label">Fechas</div>
+        <div class="val">12 — 17 mayo</div>
+      </div>
+      <div>
+        <div class="label">Grupo</div>
+        <div class="val">8 personas</div>
+      </div>
+      <div>
+        <div class="label">Base</div>
+        <div class="val">Hongdae</div>
+      </div>
+      <div>
+        <div class="label">Duración</div>
+        <div class="val">6 días</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FESTIVAL BANNER -->
+  <section class="festival fade-in" aria-label="Festival de Farolillos">
+    <div class="festival-mark"><span class="dot"></span> Evento estrella · Sábado 16 mayo</div>
+    <h2>Festival de<br><em>Farolillos de Loto</em></h2>
+    <div class="kr-sub">연등회 · Yeondeunghoe</div>
+    <p>Patrimonio inmaterial UNESCO. Miles de farolillos hechos a mano recorren 3,5 km del centro de Seúl en la noche del sábado.</p>
+    <div class="route">
+      <span>Heunginjimun</span> → <span>Jongno</span> → <span>Jogyesa</span>
+    </div>
+    <div class="when">19:00 — 21:30 · Sábado 16 mayo</div>
+  </section>
+
+  <!-- TABS -->
+  <nav class="tabs-wrap" id="tabs">
+    <div class="tabs">
+      <a class="tab" href="#dia-1"><span class="num">01</span> Llegada</a>
+      <a class="tab" href="#dia-2"><span class="num">02</span> Palacios</a>
+      <a class="tab" href="#dia-3"><span class="num">03</span> Mercados</a>
+      <a class="tab" href="#dia-4"><span class="num">04</span> Sur · Lotte</a>
+      <a class="tab festival-tab" href="#dia-5"><span class="num">05</span> Farolillos ⭐</a>
+      <a class="tab" href="#dia-6"><span class="num">06</span> Vuelta</a>
+      <a class="tab" href="#avisos">⚠ Avisos</a>
+      <a class="tab" href="#frases">한 Frases</a>
+    </div>
+  </nav>
+
+  <!-- DAY 1 -->
+  <section class="day" id="dia-1" data-screen-label="01 Día 1">
+    <div class="day-head">
+      <div class="day-num">
+        <span class="dnum">01</span>
+        <span class="dlabel"><span class="date">Mar 12 may</span> · Hongdae</span>
+      </div>
+      <h2 class="day-title">Llegada y aterrizaje en el barrio</h2>
+      <p class="day-summary">Aterrizaje suave. Solo descansar, paseo cerca del apartamento y cena temprana — resetear el jet lag durmiendo a hora coreana.</p>
+    </div>
+
+    <div class="stops" id="stops-1"></div>
+  </section>
+
+  <!-- DAY 2 -->
+  <section class="day" id="dia-2" data-screen-label="02 Día 2">
+    <div class="day-head">
+      <div class="day-num">
+        <span class="dnum">02</span>
+        <span class="dlabel"><span class="date">Mié 13 may</span> · Anguk · Jongno</span>
+      </div>
+      <h2 class="day-title">Palacios, Bukchon e Ikseon-dong</h2>
+      <p class="day-summary">El día clásico imprescindible. Cambio de guardia, samgyetang icónico, hanok village con truco anti-cuesta y cena en Ikseon-dong.</p>
+    </div>
+    <div class="stops" id="stops-2"></div>
+  </section>
+
+  <!-- DAY 3 -->
+  <section class="day" id="dia-3" data-screen-label="03 Día 3">
+    <div class="day-head">
+      <div class="day-num">
+        <span class="dnum">03</span>
+        <span class="dlabel"><span class="date">Jue 14 may</span> · Myeongdong · Dongdaemun</span>
+      </div>
+      <h2 class="day-title">Compras, canal y mercados</h2>
+      <p class="day-summary">Mañana de compras y K-beauty, dumplings legendarios, paseo por el canal y snacks callejeros en el mítico Gwangjang.</p>
+    </div>
+    <div class="stops" id="stops-3"></div>
+  </section>
+
+  <!-- DAY 4 -->
+  <section class="day" id="dia-4" data-screen-label="04 Día 4">
+    <div class="day-head">
+      <div class="day-num">
+        <span class="dnum">04</span>
+        <span class="dlabel"><span class="date">Vie 15 may</span> · Gangnam · Jamsil</span>
+      </div>
+      <h2 class="day-title">Sur de Seúl: templo, vistas y río</h2>
+      <p class="day-summary">Templo budista en Gangnam, biblioteca gigante en COEX, atardecer desde Lotte Tower y, opcional, fuentes del puente Banpo.</p>
+    </div>
+    <div class="stops" id="stops-4"></div>
+  </section>
+
+  <!-- DAY 5 (FESTIVAL — NIGHT) -->
+  <section class="day night-day" id="dia-5" data-screen-label="05 Día 5 Festival">
+    <div class="day-head">
+      <div class="day-num">
+        <span class="dnum">05</span>
+        <span class="dlabel"><span class="date">Sáb 16 may</span> · ⭐ Yeondeunghoe</span>
+      </div>
+      <h2 class="day-title">Desfile de Farolillos de Loto</h2>
+      <p class="day-summary">El día. Mañana muy tranquila para reservar piernas. Tarde-noche, el evento estrella: 3,5 km de Jongno con miles de farolillos hechos a mano.</p>
+    </div>
+    <div class="stops" id="stops-5"></div>
+  </section>
+
+  <!-- DAY 6 -->
+  <section class="day" id="dia-6" data-screen-label="06 Día 6">
+    <div class="day-head">
+      <div class="day-num">
+        <span class="dnum">06</span>
+        <span class="dlabel"><span class="date">Dom 17 may</span> · Hongdae → ICN</span>
+      </div>
+      <h2 class="day-title">Compras última hora · vuelta</h2>
+      <p class="day-summary">Mañana tranquila, cosmética y regalos de última hora, comer ligero y AREX al aeropuerto con margen para el vuelo de las 17:50.</p>
+    </div>
+    <div class="stops" id="stops-6"></div>
+  </section>
+
+  <!-- AVISOS -->
+  <section class="section" id="avisos" data-screen-label="Avisos">
+    <div class="section-header">
+      <div class="section-eyebrow">⚠ Importante</div>
+      <h2 class="section-title">Avisos<br><em>clave</em></h2>
+    </div>
+
+    <div class="warning">
+      <div class="w-tag">Salud · EPOC</div>
+      <h3>Polvo amarillo (황사) y mascarillas KF94</h3>
+      <p>Mayo es temporada de polvo asiático del desierto de Gobi. Quien tenga EPOC <strong>debe llevar mascarillas FFP2/KF94</strong> — se venden baratas en cualquier farmacia coreana, mejor llevar una caja desde España.</p>
+      <p>Consultar la app <strong>AirVisual</strong> o AirKorea cada mañana. AQI &gt; 100: mascarilla obligatoria. AQI &gt; 150: priorizar planes interiores (ver Plan B).</p>
+    </div>
+
+    <div class="warning gold">
+      <div class="w-tag">Reservas · Catch Table</div>
+      <h3>Reservar para 8 personas con antelación</h3>
+      <p>Para grupo de 8 es <strong>crítico reservar</strong> 3-7 días antes vía la app <strong>Catch Table</strong> (o Tabling): Ikseon Aetteut, Bistro Toma, Born&amp;Bred, Maple Tree House.</p>
+      <p>Aceptan walk-in para 8: Tosokchon Samgyetang, Myeongdong Kyoja, Yoogane, Marugame Udon. En Gwangjang dividir en 2 mesas de 4.</p>
+    </div>
+
+    <div class="warning">
+      <div class="w-tag">Movilidad · Truco</div>
+      <h3>Taxi Kakao para subir a Bukchon</h3>
+      <p>La cuesta desde el palacio hasta Bukchon Hanok Village es larga y dura. <strong>Coged 2 taxis Kakao</strong> directamente desde Tosokchon al mirador alto (pedir <em>"Bukchon-ro 11-gil photo spot"</em>). Bajáis caminando, mucho más cómodo para el grupo.</p>
+    </div>
+
+    <div class="warning gold">
+      <div class="w-tag">Transporte · T-money</div>
+      <h3>T-money en 7-Eleven del aeropuerto</h3>
+      <p>Comprar la tarjeta T-money nada más aterrizar (3.000 KRW) y cargar 30.000 KRW (~22 €) de saldo. Cubre todo el viaje en metro y bus.</p>
+      <p>La devolución de saldo al irse es engorrosa: mejor <strong>gastarla toda en compras</strong> los últimos días (funciona en 7-Eleven, GS25, Daiso).</p>
+    </div>
+  </section>
+
+  <!-- FRASES -->
+  <section class="section" id="frases" data-screen-label="Frases">
+    <div class="section-header">
+      <div class="section-eyebrow">한국어 · Coreano básico</div>
+      <h2 class="section-title">Frases<br><em>útiles</em></h2>
+    </div>
+    <div id="phrases"></div>
+  </section>
+
+  <div class="end">
+    <div class="mark">¡Buen viaje!</div>
+    <div class="small">12 — 17 mayo · 2026</div>
+  </div>
+
+</main>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav" aria-label="Navegación rápida">
+  <a href="#dia-1">1</a>
+  <a href="#dia-2">2</a>
+  <a href="#dia-3">3</a>
+  <a href="#dia-4">4</a>
+  <a href="#dia-5" class="festival-pin">5</a>
+  <a href="#dia-6">6</a>
+</nav>
+
+<script>
+// ============== DATA ==============
+const STOPS = {
+  1: [
+    {
+      time: "10:50",
+      name: "Aeropuerto Incheon T1",
+      kr: "인천공항 제1터미널",
+      desc: "Aterrizaje vuelo EY 0822 desde Abu Dabi. Maletas, baño, agua — margen 60-90 min antes del AREX. Comprar T-money en el 7-Eleven de llegadas (3.000 KRW + 30.000 de saldo).",
+      lat: 37.4602, lng: 126.4407, place_id: null, photo: null,
+      fallback_class: "airport"
+    },
+    {
+      time: "12:30",
+      name: "AREX 'All Stop' a Hongik Univ.",
+      kr: "홍대입구역",
+      desc: "53 min directo, 4.500 KRW. El Express obliga a transbordar con maletas — no compensa. Si llegáis reventados, taxi van 8 plazas (~80-100 €).",
+      lat: 37.5581082, lng: 126.9259574,
+      place_id: "ChIJExW378KYfDUR8aFijbcqirQ",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZN8uM8zsA_x44bE8E9KgYXxR5uyAXrK2KoSLMpQBQsXV3XpBGcFRbTDQI3IOcZK82WQofvwNSVno6F7yknEhkQZltzbYg94J6HfRyCLH2YjpTaKik54zSDCez5VF-gBO1eUY1ym3UJDFeQz-LrF7KOQMQ=s4800-w800-h600"
+    },
+    {
+      time: "16:30",
+      name: "Gyeongui Line Forest Park",
+      kr: "경의선숲길",
+      desc: "El 'Yeontral Park'. Antigua vía de tren reconvertida en parque lineal totalmente plano, lleno de cafeterías indie. A 10 min andando del apartamento. Si alguien está reventado, se queda — nadie obligado.",
+      lat: 37.5662075, lng: 126.9192364,
+      place_id: "ChIJH5tDs-WYfDURJGb8yuqKRwg",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZOc7jyzF4yWtHbZiBHNDA6DBT9vqJn0F9wS8qNpv5-50YKbE3EBCqHUn8OKIWyO4ZotgfnppWBNjEREiX9zU5aUs-FNSPf10YZD7Tn4oUDaiWIxshzLDNxDGD8k3fTfXwaJ7NYjkY0gOkbGkA=s4800-w800-h600"
+    }
+  ],
+  2: [
+    {
+      time: "10:45",
+      name: "Palacio Gyeongbokgung",
+      kr: "경복궁",
+      desc: "El palacio principal de la dinastía Joseon. Cambio de guardia interior a las <strong>11:00</strong> — más margen y menos masa que el de las 10:00. Entrada 3.000 KRW; gratis si vais en hanbok.",
+      lat: 37.579617, lng: 126.977041,
+      place_id: "ChIJod7tSseifDUR9hXHLFNGMIs",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZOcmqYnSdxQarwQxFVMTsplEg-MRjSxfUX_36kp2aZ1YB9jQhQOYyEhkpMs3mO0Hahhm52tLbOWtX7BzHLZS1gAxwn2eA4KxnlPKyXyEoaUhpo2HaTpDgMAGuEIzm8diO8eCQH4JlPGYayVw4Q=s4800-w800-h600"
+    },
+    {
+      time: "13:00",
+      name: "Tosokchon Samgyetang",
+      kr: "토속촌 삼계탕",
+      desc: "El samgyetang más famoso de Seúl: pollo entero relleno de arroz, ginseng, dátiles y ajo. Nada picante, perfecto para introducir al grupo. Walk-in, mesa rotación 30 min, sillas occidentales. ~14 €/p.",
+      lat: 37.5777786, lng: 126.9715909,
+      place_id: "ChIJb5OOGL6ifDURU29ID3t8aOA",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZMv900juEdcU5t8iQfAG92k4PXQhGGgZw9p37aM0zIY6uttlq1_axmbnSVsPO8swN0YDHrUm7ejex4ZskX-pxGLwCe_8vfl9zCI7W7jK2FLCPGXS10FSVRqnobguMC1oqYz3vUZ_E5VFTxaqnWatPqf5A=s4800-w800-h600"
+    },
+    {
+      time: "14:45",
+      name: "Bukchon Hanok Village",
+      kr: "북촌한옥마을",
+      desc: "<strong>Truco:</strong> 2 taxis Kakao desde Tosokchon hasta el mirador alto ('Bukchon-ro 11-gil photo spot'). Bajáis dando un paseo, parando en Cafe Onion Anguk. Aquí vive gente — voz baja.",
+      lat: 37.5814696, lng: 126.9849519,
+      place_id: "ChIJT8H4r9qifDURmuXJ_6m6vM0",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZOm1F-plWHf9vC_X76tcZFXSwkFycLWEAdO2rU16_vM9TyrqJWpc0YfBJZEVLCRH8sBUjZjJm2iflZVvlgfO12eAo80hJPT2SOiAxZj2AOBMslxIW53ONUD3uH_DnPKkMV6PKy4L_PrzGhICyE=s4800-w800-h600"
+    },
+    {
+      time: "16:00",
+      name: "Insadong · Ssamzigil",
+      kr: "인사동 쌈지길",
+      desc: "La calle de la artesanía coreana. Plana, ideal después de Bukchon. Ssamzigil es un edificio en espiral con tiendas de hanji, cerámicas, té y sellos personalizables. Bueno para regalos.",
+      lat: 37.5743024, lng: 126.9849036,
+      place_id: "ChIJQRutlcKifDURiMoaUPYmWX4",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZMjfE9oPhpgX5jOLW_fjtbyvtrDJzLobQudHP2ECVkobkbEjuREFglg4H7BjZPyQXAzJ6OkaxblkN5m8NoLta_9nwH_SMReZ3gukWd1gl2ZxvciF1RHvUtxcwT3-2NfOtbbscF9S0KO-IIzGxs=s4800-w800-h600"
+    },
+    {
+      time: "19:00",
+      name: "Ikseon-dong Hanok Village",
+      kr: "익선동",
+      desc: "El barrio joya. Hanoks de los años 30 reconvertidos en cafeterías y restaurantes de diseño. Cena en <strong>Ikseon Aetteut</strong> o Bistro Toma — reserva Catch Table 3 días antes. ~28 €/p.",
+      lat: 37.5737132, lng: 126.9901271,
+      place_id: "ChIJe4Jbot2ifDUR2zWhruwyaow",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZOx5jj-1RDCPrNXHvz7_mWOIuWATPjFcNnSoAMtao8VshVFnCbZGGDVPU1tRcnWzfxsVL2AkYOyoIG1eIxFyRaLf7tPqDlXFITVAt9OnfEvspbPpMDzrTEcMzf7gw2RNeg1mawLN34n2Du0udM=s4800-w800-h600"
+    }
+  ],
+  3: [
+    {
+      time: "14:30",
+      name: "Catedral de Myeongdong",
+      kr: "명동성당",
+      desc: "Catedral neogótica, la católica más importante de Corea. Acceso libre, oasis tranquilísimo en medio del bullicio comercial. Tras la mañana de compras y el almuerzo en Myeongdong Kyoja (Bib Gourmand).",
+      lat: 37.5633851, lng: 126.987436,
+      place_id: "ChIJs2hQTOWifDURk8inZqIttEQ",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZN2eL6PbzpAUqiLoUIaqXhZJnGkl5X0HLtC0rWCGgt03mvEheZbJqFZF0Vu6PAxTYHeqcKb5Sq4m_hGSZrELk4hl5ZhP5b4j04rbWjoYGox98dHHOe8R6NhYCgWKqtuzdGxlBquyO5qq9XS=s4800-w800-h600"
+    },
+    {
+      time: "15:00",
+      name: "Cheonggye Plaza",
+      kr: "청계광장",
+      desc: "Inicio del paseo del canal restaurado. Escultura roja-azul 'Spring' enorme. Bajáis al nivel del agua y caminad 1,5 km hacia el este — plano, con sombra y bancos. Si veis cansancio, salir antes y taxi.",
+      lat: 37.5691686, lng: 126.9780272,
+      place_id: "ChIJk8x74-yifDURXVhW9zZEvZk",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZPOxErn6PYqD0w362jZ4B7ylPSdeUfQqAjjeNStacQxibrDEre0ukGIg-D8WOkXwTwisns8JXv40N-R5HszUjPo3dBhfGLHwG3eoKH1FxmEF6EX5pvC9636AcQw6i3Bga_DK83gaqD2uTNfIHs=s4800-w800-h600"
+    },
+    {
+      time: "17:00",
+      name: "Gwangjang Market ⭐",
+      kr: "광장시장",
+      desc: "El mercado callejero más famoso de Seúl. <strong>Para 8: dividirse en 2 mesas de 4.</strong> Pedir bindaetteok (tortita de mungo), mayak gimbap (mini rollos adictivos), tteokbokki, sundae. Mascarilla — es cerrado y va lleno.",
+      lat: 37.5700398, lng: 126.9996036,
+      place_id: "ChIJm3V0fu2ifDURRJ8IMUijVtY",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNIXp11iS1ITR-liMqBwcf_Z9eiRGYiI40JmVdWiHta3sbndnMpDJHFnemY0Ikn8oIxUChp9KMJBE3Tb7PVXWqIKthnosgwb3MbrVfkKt3-LDcaHYmXj35nr9k9C1bx_oQ6u2Q6e05o4tIISSE=s4800-w800-h600"
+    },
+    {
+      time: "19:00",
+      name: "Heunginjimun · DDP",
+      kr: "흥인지문 · 동대문디자인플라자",
+      desc: "Puerta histórica del este de Seúl junto al DDP, edificio futurista de Zaha Hadid (aluminio curvado). Túneles LED al anochecer, fotos brutales. <strong>Aquí arranca el desfile de farolillos del sábado</strong> — os familiarizáis con la zona.",
+      lat: 37.5710717, lng: 127.0096571,
+      place_id: "ChIJm6x0HTujfDURbf9iX8DtJ2A",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNBRr2-q2qIRorjp6A6ZqZAB6wu9CoTCkPO1GMZseFjOn9QTU3XjSpSCyhqoXnVeQGw-YpJK_TooZpTVp2Gqpbb2OW1qyEZi0GUNZeRn2zODb9zKmW5eD_duMfDHIhCA1C5PdOZB8xS21e4=s4800-w800-h600"
+    }
+  ],
+  4: [
+    {
+      time: "11:45",
+      name: "Bongeunsa Temple",
+      kr: "봉은사",
+      desc: "Templo budista del s. VIII rodeado por los rascacielos de Gangnam. Buda gigante de 23 m en lo alto. Para esta semana ya tendrán los farolillos colgados por el festival que se acerca — especialmente bonito.",
+      lat: 37.514852, lng: 127.0573766,
+      place_id: "ChIJgZn6QWmkfDURaU3kwlecaEU",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZMP6E-WR1JcGd3Lc0p2kGokq_vjmfvPb-zyeVkw3kA-oK47CRBHcsb9Kxla3mcOPPBk3bGUGJFfVoQdGN6umyRo24rW5nkmI5p_HIEqqlID8G7to8hsc53Jf2hjj-y6YMsFWDDHihag3-wBZgo=s4800-w800-h600"
+    },
+    {
+      time: "13:00",
+      name: "Starfield Library · COEX",
+      kr: "별마당 도서관",
+      desc: "Centro comercial subterráneo gigante con la biblioteca de 13 m de altura llena de libros. Foto inevitable. Almuerzo en Marugame Udon (~7 €/p) o food court coreano. Aircon y baños limpios — ideal si la calidad del aire está mala.",
+      lat: 37.5100586, lng: 127.0601188,
+      place_id: "ChIJu5Gg2hWkfDURl7NN7FpFnis",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNeBbCYfJTh68vn2IDlvU4_hMmAiikKyt9-NFcy2jOahsKakstkKmrM61rOJv51o_0BJ_haoJBJ9c9AbhBO81QMYUit7TnhZcOlS9dsioGcN2ubq5sQMQQQFMKtU2g4lcDbwG8Bkqr-EzfE=s4800-w800-h600"
+    },
+    {
+      time: "17:30",
+      name: "Seoul Sky · Lotte Tower ⭐",
+      kr: "서울스카이 · 롯데월드타워",
+      desc: "El rascacielos más alto de Corea (555 m, piso 123). Vistas 360° sobre Seúl. <strong>Reservar online en Klook con franja sunset</strong> (18:00-18:30) — más barato y sin colas. Subís de día y bajáis con la ciudad iluminada.",
+      lat: 37.5125295, lng: 127.102305,
+      place_id: "ChIJu7dpc45FezURhLMS5U5eaJk",
+      photo: "https://lh3.googleusercontent.com/places/ANXAkqHSKoBQq_7QZiDPhSiKGhBL-EhHowxYeYwBEZVZWvAM7EHfrEqpg41OfDu7DIdRV0_KTTLagyIowiMfIvvMf_VciOjIaMsdaZ0=s4800-w800-h600"
+    },
+    {
+      time: "21:00",
+      name: "Banpo Bridge Rainbow Fountain",
+      kr: "반포대교 무지개분수",
+      desc: "Espectáculo de fuentes más largo del mundo (Guinness). Pase a las 21:00, dura 20 min. Metro Express Bus Terminal salida 8-1, 15 min andando. Si el grupo está reventado, saltarlo y a casa. <strong>Se cancela si llueve o sopla viento.</strong>",
+      lat: 37.5126335, lng: 126.9984783,
+      place_id: "ChIJeVnK5X-hfDURv2fEEK-332M",
+      photo: "https://lh3.googleusercontent.com/places/ANXAkqHNWXSy4-seTQfe_HIULGGFlxmNytBdo6lp2j12ZBCvKXtBNl5n1JrI0BSa9Ep87rhJjLYLyPQFPlxHFIur2FrC9w61OnZ4Lg=s4800-w800-h600"
+    }
+  ],
+  5: [
+    {
+      time: "12:00",
+      name: "Mangwon Market",
+      kr: "망원시장",
+      desc: "Mercado local auténtico, no turístico, a 15 min andando del apartamento. Almuerzo callejero: chamchi gimbap, mandu fritos, hotteok dulce, fish cakes en caldo. ~9 €/p. Vuelta al apartamento sobre las 14:30 para descanso obligatorio.",
+      lat: 37.5559018, lng: 126.9062854,
+      place_id: "ChIJA6gxryiZfDURJvmbeBvdz_Y",
+      photo: "https://lh3.googleusercontent.com/places/ANXAkqGhYIujmfkBt_FdPTv-GGK914EuKaVOfIY1oTxAncSCnd0AicnB-8FypPsm80ESDTc2vUQOcoBC6N3qSJtRL6Gm9Y36mvrALJE=s4800-w800-h600"
+    },
+    {
+      time: "17:00",
+      name: "Templo Jogyesa",
+      kr: "조계사",
+      desc: "Cuartel general del budismo Jogye en Corea. La semana del festival lo llenan de <strong>miles de farolillos formando un techo de colores</strong>. Verlo de día os ahorra el atasco de la noche, cuando termina el desfile aquí.",
+      lat: 37.5738369, lng: 126.982202,
+      place_id: "ChIJHYhJ5OmifDURMOSQ2D-6lFY",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZM7hcD-y1UpNkSYwo9rhp0TesHnzDRVrZAFg8W3QmoFc03k3CCZcC3rIaIFtVx79PJlY022o3Oc9cayVJ4jyEUS1NwdotbGbOb9u5jtrUBgRdTGaTQx9dsJaffE84R_NHD0M7TDo6ox8dh2=s4800-w800-h600"
+    },
+    {
+      time: "19:00",
+      name: "⭐⭐ Inicio del desfile · Jongno",
+      kr: "흥인지문 → 종로 → 조계사",
+      desc: "<strong>Mejor sitio:</strong> Jongno entre Jonggak y Jongno 3-ga (parte intermedia). Llegáis a las 18:30, ocupáis acera, el desfile pasa hacia las 20:00. Cojín, paraguas, agua, mascarilla. Salida metro Jonggak L1 salida 1 — la más cómoda para grupo.",
+      lat: 37.5710717, lng: 127.0096571,
+      place_id: "ChIJm6x0HTujfDURbf9iX8DtJ2A",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNBRr2-q2qIRorjp6A6ZqZAB6wu9CoTCkPO1GMZseFjOn9QTU3XjSpSCyhqoXnVeQGw-YpJK_TooZpTVp2Gqpbb2OW1qyEZi0GUNZeRn2zODb9zKmW5eD_duMfDHIhCA1C5PdOZB8xS21e4=s4800-w800-h600"
+    }
+  ],
+  6: [
+    {
+      time: "14:15",
+      name: "AREX a ICN · Hongik Univ.",
+      kr: "홍대입구역 → 인천공항",
+      desc: "Mañana: Olive Young, Daiso y Artbox para regalos de última hora. AREX 'All Stop' sale cada 12 min, 53 min hasta T1, 4.500 KRW. Counter Etihad EY 0823 abre 3 h antes (14:50). Despegue 17:50.",
+      lat: 37.5581082, lng: 126.9259574,
+      place_id: "ChIJExW378KYfDUR8aFijbcqirQ",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZN8uM8zsA_x44bE8E9KgYXxR5uyAXrK2KoSLMpQBQsXV3XpBGcFRbTDQI3IOcZK82WQofvwNSVno6F7yknEhkQZltzbYg94J6HfRyCLH2YjpTaKik54zSDCez5VF-gBO1eUY1ym3UJDFeQz-LrF7KOQMQ=s4800-w800-h600"
+    }
+  ]
+};
+
+const PHRASES = [
+  { es: "Hola", kr: "안녕하세요", pron: "annyeonghaseyo" },
+  { es: "Gracias", kr: "감사합니다", pron: "kamsahamnida" },
+  { es: "Sí / No", kr: "네 / 아니요", pron: "ne / aniyo" },
+  { es: "Por favor (al pedir)", kr: "주세요", pron: "juseyo" },
+  { es: "¿Cuánto cuesta?", kr: "얼마예요?", pron: "eolmayeyo?" },
+  { es: "La cuenta, por favor", kr: "계산해 주세요", pron: "gyesanhae juseyo" },
+  { es: "Para 8 personas, por favor", kr: "여덟 명이요", pron: "yeodol myeong-iyo" },
+  { es: "No muy picante, por favor", kr: "안 맵게 해주세요", pron: "an maepge haejuseyo" },
+  { es: "¿Dónde está el baño?", kr: "화장실 어디예요?", pron: "hwajangsil eodiyeyo?" },
+  { es: "Está delicioso", kr: "맛있어요", pron: "masisseoyo" },
+  { es: "Perdón / disculpe", kr: "죄송합니다", pron: "joesonghamnida" },
+  { es: "No hablo coreano", kr: "한국어 못 해요", pron: "hangugeo mot haeyo" },
+  { es: "¿Habla inglés?", kr: "영어 할 수 있어요?", pron: "yeongeo hal su isseoyo?" },
+  { es: "Ayúdeme, por favor", kr: "도와주세요", pron: "dowajuseyo" },
+  { es: "¡Salud! (al brindar)", kr: "건배!", pron: "geonbae!" }
+];
+
+// ============== RENDER ==============
+function gmapsUrl(s) {
+  if (!s.place_id) {
+    return `https://www.google.com/maps/search/?api=1&query=${s.lat},${s.lng}`;
+  }
+  return `https://www.google.com/maps/search/?api=1&query=${s.lat},${s.lng}&query_place_id=${s.place_id}`;
+}
+function naverUrl(s) {
+  const q = encodeURIComponent(s.kr || s.name);
+  return `https://map.naver.com/p/search/${q}`;
+}
+
+function makeStopCard(s) {
+  const card = document.createElement('article');
+  card.className = 'stop';
+
+  let photoHTML;
+  if (s.photo) {
+    photoHTML = `<img class="stop-photo" loading="lazy" src="${s.photo}" alt="${s.name}" onerror="this.outerHTML='<div class=&quot;stop-photo-fallback ${s.fallback_class||''}&quot;>${s.name.replace(/'/g,'&apos;')}</div>'">`;
+  } else {
+    photoHTML = `<div class="stop-photo-fallback ${s.fallback_class||''}">${s.name}</div>`;
+  }
+
+  card.innerHTML = `
+    ${photoHTML}
+    <div class="stop-body">
+      <span class="stop-time">${s.time}</span>
+      <h3 class="stop-name">${s.name}</h3>
+      <div class="stop-kr">${s.kr}</div>
+      <p class="stop-desc">${s.desc}</p>
+      <div class="stop-actions">
+        <a class="btn primary" href="${gmapsUrl(s)}" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Google Maps
+        </a>
+        <a class="btn outline" href="${naverUrl(s)}" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9-9 9-9-9z"/><path d="M9 14V9l6 6V9"/></svg>
+          Naver Map
+        </a>
+      </div>
+    </div>
+  `;
+  return card;
+}
+
+for (let d = 1; d <= 6; d++) {
+  const c = document.getElementById('stops-' + d);
+  STOPS[d].forEach(s => c.appendChild(makeStopCard(s)));
+}
+
+// PHRASES
+const ph = document.getElementById('phrases');
+PHRASES.forEach(p => {
+  const el = document.createElement('div');
+  el.className = 'phrase';
+  el.innerHTML = `
+    <div class="phrase-es">${p.es}</div>
+    <div class="phrase-kr">${p.kr}</div>
+    <div class="phrase-pron">${p.pron}</div>
+  `;
+  ph.appendChild(el);
+});
+
+// Active tab/nav highlight on scroll
+const sections = ['dia-1','dia-2','dia-3','dia-4','dia-5','dia-6','avisos','frases'];
+function setActive() {
+  let activeId = sections[0];
+  const top = window.scrollY + 110;
+  for (const id of sections) {
+    const el = document.getElementById(id);
+    if (el && el.offsetTop <= top) activeId = id;
+  }
+  document.querySelectorAll('.tab').forEach(t => {
+    t.classList.toggle('active', t.getAttribute('href') === '#' + activeId);
+  });
+  document.querySelectorAll('.bottom-nav a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + activeId);
+  });
+  // Auto-scroll active tab into view
+  const activeTab = document.querySelector('.tab.active');
+  if (activeTab) {
+    const tabsScroll = activeTab.parentElement;
+    const tabRect = activeTab.getBoundingClientRect();
+    const wrapRect = tabsScroll.getBoundingClientRect();
+    if (tabRect.left < wrapRect.left || tabRect.right > wrapRect.right) {
+      tabsScroll.scrollTo({
+        left: activeTab.offsetLeft - 20,
+        behavior: 'smooth'
+      });
+    }
+  }
+}
+window.addEventListener('scroll', setActive, { passive: true });
+setActive();
+
+// Smooth scroll with offset
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    const href = link.getAttribute('href');
+    if (href.length <= 1) return;
+    const target = document.querySelector(href);
+    if (!target) return;
+    e.preventDefault();
+    const top = target.getBoundingClientRect().top + window.scrollY - 60;
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
+});
+</script>
+
+</body>
+</html>
