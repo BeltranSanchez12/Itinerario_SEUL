@@ -161,7 +161,101 @@ window.ITINERARY = {
   ],
   gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Myeongdong_Shopping_Street_Seoul.jpg/800px-Myeongdong_Shopping_Street_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Myeongdong_Night_Market.jpg/800px-Myeongdong_Night_Market.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Myeongdong_Cathedral_in_Seoul.jpg/800px-Myeongdong_Cathedral_in_Seoul.jpg"]
 },
-
+{
+  n: 3, dow: "Jue", date: "14 may", neighborhood: "Gangnam · Centro · Ikseon-dong",
+  title: "Gangnam, canal, mercados y hanoks",
+  summary: "Mañana en Gangnam con la biblioteca Starfield y foto de Gangnam Style, almuerzo de gomtang histórico (Bib Gourmand desde 1939), paseo por el canal Cheonggyecheon, snacks callejeros en Gwangjang, arquitectura de Zaha Hadid en DDP al anochecer y cierre con cena en los hanoks reconvertidos de Ikseon-dong.",
+  walked: "~10-11 km (todo plano)",
+  schedule: [
+    { time: "09:30", act: "Desayuno rápido en Hongdae", area: "Hongdae", cost: "8 €/p", note: "Pancake Originals (suflé) o café local" },
+    { time: "10:15", act: "Metro Hongik (L2) → Samseong (L2) directo", area: "→ Gangnam", cost: "1.500 KRW", note: "35 min" },
+    { time: "11:00", act: "COEX Mall + Starfield Library (foto + paseo)", area: "Gangnam", cost: "Gratis", note: "Biblioteca de 13 m, Kakao Friends store, Aland" },
+    { time: "12:00", act: "Estatua Gangnam Style (foto rápida)", area: "Gangnam", cost: "Gratis", note: "5 min, salida 5 de Samseong" },
+    { time: "12:15", act: "Metro Samseong (L2) → Euljiro 1-ga (L2)", area: "→ Myeongdong", cost: "1.500 KRW", note: "30 min. Salida 5 o 6" },
+    { time: "13:00", act: "⭐ Almuerzo: Hadongkwan (gomtang Bib Gourmand)", area: "Myeongdong", cost: "~12 €/p", note: "Desde 1939. Walk-in only, dine-in only. Sirven en 2 min. Llegar antes de las 14:00 — cierra a las 16:00" },
+    { time: "14:00", act: "Andar 10 min al norte → Cheonggye Plaza", area: "Centro", cost: "—", note: "Plano. Escultura roja-azul 'Spring'" },
+    { time: "14:30", act: "Paseo canal Cheonggyecheon (1,5 km hacia el este)", area: "Centro", cost: "Gratis", note: "Bajar al nivel del agua, fresquito. Si veis cansancio, salimos antes y taxi" },
+    { time: "15:45", act: "⭐ Snacks callejeros en Gwangjang Market", area: "Jongno", cost: "8-12 €/p", note: "Bindaetteok, mayak gimbap, tteokbokki. Ligero — la cena es en Ikseon" },
+    { time: "16:45", act: "Andar 5 min a Ikseon-dong", area: "Ikseon-dong", cost: "—", note: "Paseo por los callejones de hanoks" },
+    { time: "17:00", act: "Café en Ikseon-dong (Madang Flower Café u Onion)", area: "Ikseon-dong", cost: "~5 €/p", note: "Patio precioso, ideal para sentarse y descansar" },
+    { time: "18:30", act: "Metro Jongno 3-ga (L1) → Dongdaemun (L1) — 1 parada", area: "→ Dongdaemun", cost: "1.500 KRW", note: "Para ver DDP al anochecer" },
+    { time: "19:00", act: "Heunginjimun Gate + DDP (Zaha Hadid)", area: "Dongdaemun", cost: "Gratis", note: "Foto curvas LED. <strong>⭐ Aquí arranca el desfile de farolillos del sábado</strong> — reconocimiento de zona" },
+    { time: "20:15", act: "Vuelta a Ikseon-dong (taxi o andando 15 min)", area: "→ Ikseon-dong", cost: "5.000 KRW", note: "Andando es plano y los callejones de noche están bonitos" },
+    { time: "20:45", act: "⭐ Cena: Ikseon Aetteut o GUO", area: "Ikseon-dong", cost: "25-30 €/p", note: "Reservamos Catch Table 2-3 días antes" },
+    { time: "22:15", act: "Metro Jongno 3-ga (L3 → L2) vuelta a Hongdae", area: "→ Hongdae", cost: "1.500 KRW", note: "30 min" }
+  ],
+  stops: [
+    {
+      name: "Starfield Library · COEX", kr: "별마당 도서관",
+      desc: "Centro comercial subterráneo gigante con la biblioteca de 13 m de altura llena de libros. Gratis, foto inevitable. Al lado: Kakao Friends store, Aland (moda joven), food court enorme. Apertura del día antes de bajar a Myeongdong.",
+      lat: 37.5100586, lng: 127.0601188,
+      place_id: "ChIJu5Gg2hWkfDURl7NN7FpFnis",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNeBbCYfJTh68vn2IDlvU4_hMmAiikKyt9-NFcy2jOahsKakstkKmrM61rOJv51o_0BJ_haoJBJ9c9AbhBO81QMYUit7TnhZcOlS9dsioGcN2ubq5sQMQQQFMKtU2g4lcDbwG8Bkqr-EzfE=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Starfield_Library_COEX.jpg/800px-Starfield_Library_COEX.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Starfield_COEX_Mall_Library.jpg/800px-Starfield_COEX_Mall_Library.jpg"]
+    },
+    {
+      name: "Hadongkwan ⭐", kr: "하동관",
+      desc: "Gomtang (sopa de hueso de ternera) desde 1939, Bib Gourmand de Michelin. Solo caldo claro, ternera en lonchas y arroz — ajustáis sal y cebolleta al gusto. Cero picante, muy reconfortante. <strong>Walk-in only, dine-in only.</strong> Sirven en 2 minutos: se pide y paga en la entrada, luego te sientas. <strong>Cierra a las 16:00 (a veces antes si se acaba el caldo)</strong> — llegar como muy tarde a las 14:00. ~18.000 KRW.",
+      lat: 37.5643946, lng: 126.9850185,
+      place_id: "ChIJvZjTMWC9fDURxnT8dx21N3U",
+      photo: "",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Korean_soup-Seolleongtang-01.jpg/800px-Korean_soup-Seolleongtang-01.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Gomtang.jpg/800px-Gomtang.jpg"]
+    },
+    {
+      name: "Cheonggye Plaza & Stream", kr: "청계광장 · 청계천",
+      desc: "Arroyo restaurado en 2005 que atraviesa el centro. Empezamos en la plaza (escultura 'Spring' enorme) y bajamos al nivel del agua. 1,5 km hacia el este. Plano, sombra y bancos. Si veis cansancio, salimos antes y taxi.",
+      lat: 37.5691686, lng: 126.9780272,
+      place_id: "ChIJk8x74-yifDURXVhW9zZEvZk",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZPOxErn6PYqD0w362jZ4B7ylPSdeUfQqAjjeNStacQxibrDEre0ukGIg-D8WOkXwTwisns8JXv40N-R5HszUjPo3dBhfGLHwG3eoKH1FxmEF6EX5pvC9636AcQw6i3Bga_DK83gaqD2uTNfIHs=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cheonggyecheon_stream_Seoul.jpg/800px-Cheonggyecheon_stream_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cheonggye_Plaza_Spring_sculpture.jpg/800px-Cheonggye_Plaza_Spring_sculpture.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Cheonggyecheon_at_night.jpg/800px-Cheonggyecheon_at_night.jpg"]
+    },
+    {
+      name: "Gwangjang Market ⭐", kr: "광장시장",
+      desc: "El mercado callejero más famoso de Seúl. Vamos a probar 3-4 cosas como snack, no a cenar (cena es en Ikseon-dong). <strong>Para 8: nos dividimos en 2 mesas de 4</strong> (es muy difícil sentar a 8 juntos). Algunos puestos cobran 'seat charge' a turistas — preguntamos antes.",
+      lat: 37.5700398, lng: 126.9996036,
+      place_id: "ChIJm3V0fu2ifDURRJ8IMUijVtY",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNIXp11iS1ITR-liMqBwcf_Z9eiRGYiI40JmVdWiHta3sbndnMpDJHFnemY0Ikn8oIxUChp9KMJBE3Tb7PVXWqIKthnosgwb3MbrVfkKt3-LDcaHYmXj35nr9k9C1bx_oQ6u2Q6e05o4tIISSE=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Gwangjang_Market_food_stalls.jpg/800px-Gwangjang_Market_food_stalls.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Bindaetteok_at_Gwangjang_Market.jpg/800px-Bindaetteok_at_Gwangjang_Market.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mayak_Gimbap_Gwangjang.jpg/800px-Mayak_Gimbap_Gwangjang.jpg"]
+    },
+    {
+      name: "Ikseon-dong Hanok Village", kr: "익선동",
+      desc: "El barrio joya. Hanoks de los años 30 reconvertidos en cafeterías, restaurantes y boutiques de diseño. Más auténtico que Bukchon de noche, ambiente menos turístico y más coreano joven. Pasamos la tarde-noche aquí: café antes de DDP y cena de vuelta.",
+      lat: 37.5737132, lng: 126.9901271,
+      place_id: "ChIJe4Jbot2ifDUR2zWhruwyaow",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZOx5jj-1RDCPrNXHvz7_mWOIuWATPjFcNnSoAMtao8VshVFnCbZGGDVPU1tRcnWzfxsVL2AkYOyoIG1eIxFyRaLf7tPqDlXFITVAt9OnfEvspbPpMDzrTEcMzf7gw2RNeg1mawLN34n2Du0udM=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ikseon-dong_alley.jpg/800px-Ikseon-dong_alley.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ikseon-dong_hanok_cafe.jpg/800px-Ikseon-dong_hanok_cafe.jpg"]
+    },
+    {
+      name: "Heunginjimun & DDP", kr: "흥인지문 · 동대문디자인플라자",
+      desc: "Puerta histórica del este de Seúl junto al DDP, edificio futurista de Zaha Hadid (aluminio curvado). Túneles LED al anochecer dan fotos brutales. <strong>⭐ AQUÍ ARRANCA EL DESFILE DE FAROLILLOS DEL SÁBADO.</strong> Os familiarizáis con la zona ahora.",
+      lat: 37.5710717, lng: 127.0096571,
+      place_id: "ChIJm6x0HTujfDURbf9iX8DtJ2A",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNBRr2-q2qIRorjp6A6ZqZAB6wu9CoTCkPO1GMZseFjOn9QTU3XjSpSCyhqoXnVeQGw-YpJK_TooZpTVp2Gqpbb2OW1qyEZi0GUNZeRn2zODb9zKmW5eD_duMfDHIhCA1C5PdOZB8xS21e4=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dongdaemun_Design_Plaza_Seoul.jpg/800px-Dongdaemun_Design_Plaza_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/DDP_at_night_LED_Roses.jpg/800px-DDP_at_night_LED_Roses.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Heunginjimun_Gate.jpg/800px-Heunginjimun_Gate.jpg"]
+    }
+  ],
+  market_picks: [
+    { name: "Bindaetteok", kr: "빈대떡", price: "~5 €", note: "Tortita de mungo crujiente. No picante." },
+    { name: "Mayak gimbap", kr: "마약김밥", price: "~3 €", note: "'Kimbap-droga': mini rollos con mostaza dulce. Adictivo, no picante." },
+    { name: "Yukhoe", kr: "육회", price: "~15 €", note: "Steak tartar coreano con pera y huevo. Solo si nos atrevemos con carne cruda." },
+    { name: "Tteokbokki", kr: "떡볶이", price: "~5 €", note: "Pastel de arroz con salsa picante. Avisamos de tolerancia." },
+    { name: "Sundae", kr: "순대", price: "~5 €", note: "Morcilla coreana. Auténtico pero no para todos." },
+    { name: "Kalguksu de almeja", kr: "조개칼국수", price: "~6 €", note: "Por si todavía hay hambre." }
+  ],
+  meals: [
+    { type: "Almuerzo principal", name: "Hadongkwan", kr: "하동관", price: "~12 €/p", note: "Bib Gourmand desde 1939. Gomtang clásico, suave y reconfortante. Walk-in only, dine-in only. <strong>Cierra a las 16:00.</strong>" },
+    { type: "Backup almuerzo", name: "Jinjuhwoegwan", kr: "진주회관", price: "~10 €/p", note: "Si Hadongkwan ya cerró o cola muy larga: kongnamul gukbap (sopa de brotes de soja con arroz), clásico de City Hall, muy suave." },
+    { type: "Cena principal", name: "Ikseon Aetteut", kr: "익선애뜻", price: "~25 €/p", note: "Cerdo a la parrilla con arroz, fusión moderna en hanok reconvertido. Reservamos Catch Table 2-3 días antes." },
+    { type: "Cena alternativa", name: "GUO", kr: "구오", price: "~18 €/p", note: "Sheng jian bao viral en Seúl. Walk-in con cola, mesas pequeñas." },
+    { type: "Cena alternativa 2", name: "Bistro Toma", kr: "토마", price: "~30 €/p", note: "Fusión japo-coreana muy estética. Reserva." }
+  ],
+  tips: [
+    { icon: "⏰", text: "<strong>Hadongkwan cierra a las 16:00</strong> (a veces antes si se acaba el caldo). Llegar como muy tarde a las 14:00. Cerrado los domingos." },
+    { icon: "💡", text: "<strong>Para 8 en Gwangjang:</strong> nos dividimos en 2 mesas de 4. Snack ligero — la cena es en Ikseon-dong." },
+    { icon: "💡", text: "Reserva en Ikseon Aetteut por Catch Table con 2-3 días de antelación — el restaurante es pequeño." },
+    { icon: "🚻", text: "Baños públicos: COEX, DDP y la oficina de turismo de Insadong (de paso)." }
+  ]
+},
     {
       n: 4, dow: "Vie", date: "15 may", neighborhood: "Suwon (excursión)",
       title: "Suwon · muralla y palacio anexo",
