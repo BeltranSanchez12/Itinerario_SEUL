@@ -152,98 +152,110 @@ window.ITINERARY = {
       ],
           gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Korean_cuisine-Samgyetang-01.jpg/800px-Korean_cuisine-Samgyetang-01.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Samgyetang_2.jpg/800px-Samgyetang_2.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Korean.cuisine-Samgyetang-04.jpg/800px-Korean.cuisine-Samgyetang-04.jpg"]
     },
-
+{
+  n: 2, dow: "Mié", date: "13 may", neighborhood: "Jongno · Myeongdong",
+  title: "Palacios, Bukchon y Myeongdong",
+  summary: "El día clásico imprescindible. Cambio de guardia en el palacio principal, samgyetang icónico para almorzar, hanok village con truco anti-cuesta, paseo por Insadong, tarde-noche de compras y cena en Myeongdong, y cierre con las fuentes de colores en Banpo.",
+  walked: "~9-11 km",
+  schedule: [
+    { time: "09:00", act: "Desayuno cerca del apartamento", area: "Hongdae", cost: "5-8 €/p", note: "Cafetería local o Paris Baguette" },
+    { time: "09:30", act: "Metro Hongik (L2) → Samseong (L2) directo", area: "→ Gangnam", cost: "1.500 KRW", note: "35 min. Vamos primero al sur" },
+    { time: "10:15", act: "Templo Bongeunsa (farolillos del festival)", area: "Gangnam", cost: "Gratis", note: "1h. Templo del s. VIII rodeado de rascacielos" },
+    { time: "11:30", act: "Metro Samseong (L2) → Euljiro 3-ga → Anguk (L3)", area: "→ Anguk", cost: "1.500 KRW", note: "~30 min. Salida 1 de Anguk" },
+    { time: "12:15", act: "Llegada Palacio Gyeongbokgung", area: "Jongno", cost: "3.000 KRW", note: "Gratis si vamos en hanbok (alquiler 15-25 €/p)" },
+    { time: "13:00", act: "⭐ Cambio de guardia puerta interior (13:00)", area: "Jongno", cost: "—", note: "Pase del mediodía/tarde" },
+    { time: "13:30", act: "Paseo palacio (Gyeonghoeru + Hyangwonjeong)", area: "Jongno", cost: "Incluido", note: "1h, no agotar — el palacio es enorme" },
+    { time: "14:30", act: "⭐ Almuerzo: Tosokchon Samgyetang", area: "Jongno", cost: "~14 €/p", note: "5 min andando del palacio. Cola 20 min, sin reservas" },
+    { time: "15:45", act: "Taxi a la zona alta de Bukchon", area: "→ Bukchon", cost: "5.000 KRW total", note: "Pedir 'Bukchon-ro 11-gil view'. Evita la cuesta" },
+    { time: "16:00", act: "Bukchon Hanok Village (bajamos)", area: "Bukchon", cost: "Gratis", note: "Voz baja, gente vive ahí" },
+    { time: "17:00", act: "Insadong + Ssamzigil", area: "Insadong", cost: "Compras", note: "Calle plana. Artesanía, hanji, té coreano" },
+    { time: "18:00", act: "Metro Jongno 3-ga (L3) → Euljiro 1-ga (L2) — 1 parada", area: "→ Myeongdong", cost: "1.500 KRW", note: "También se puede andar (15 min, plano)" },
+    { time: "18:30", act: "Myeongdong: compras + Olive Young flagship", area: "Myeongdong", cost: "Variable", note: "10% off a turistas con pasaporte. La calle se anima al anochecer" },
+    { time: "19:45", act: "Catedral de Myeongdong (paseo rápido)", area: "Myeongdong", cost: "Gratis", note: "Neogótica, oasis tranquilo entre el bullicio" },
+    { time: "20:15", act: "⭐ Cena: Myeongdong Kyoja (Bib Gourmand)", area: "Myeongdong", cost: "~9 €/p", note: "Walk-in, sirven en 5 min. Kalguksu + mandu" },
+    { time: "21:15", act: "Metro Euljiro 1-ga (L2) → Express Bus Terminal (L3) + paseo a Banpo", area: "→ Banpo", cost: "1.500 KRW", note: "Salida 8-1, 15 min andando al césped sur" },
+    { time: "21:45", act: "🌈 Banpo Bridge Rainbow Fountain (último pase)", area: "Banpo", cost: "Gratis", note: "Show de 20 min. Llevamos algo para sentarnos" },
+    { time: "22:30", act: "Taxi/metro vuelta a Hongdae", area: "→ Hongdae", cost: "1.500-15.000 KRW", note: "Taxi más cómodo a esa hora" }
+  ],
+  stops: [
     {
-      n: 3, dow: "Jue", date: "14 may", neighborhood: "Myeongdong · Dongdaemun",
-      title: "Compras, canal y mercados",
-      summary: "Mañana de compras en Myeongdong (skincare coreana, marcas), almuerzo Bib Gourmand de dumplings legendarios, paseo por el canal Cheonggyecheon, snacks callejeros en el mítico Gwangjang, y arquitectura nocturna en DDP. Cena de BBQ ya en casa.",
-      walked: "~10 km (todo plano)",
-      schedule: [
-        { time: "09:30", act: "Desayuno rápido en Hongdae", area: "Hongdae", cost: "8 €/p", note: "Pancake Originals (suflé) o café local" },
-        { time: "10:15", act: "Metro Hongik (L2) → Samseong (L2) directo", area: "→ Gangnam", cost: "1.500 KRW", note: "35 min" },
-        { time: "11:00", act: "COEX Mall + Starfield Library (foto + paseo)", area: "Gangnam", cost: "Gratis", note: "Biblioteca de 13 m, Kakao Friends store, Aland" },
-        { time: "12:00", act: "Estatua Gangnam Style (foto rápida)", area: "Gangnam", cost: "Gratis", note: "5 min, salida 5 de Samseong" },
-        { time: "12:15", act: "Metro Samseong (L2) → Euljiro 1-ga (L2)", area: "→ Myeongdong", cost: "1.500 KRW", note: "30 min. Salida 6" },
-        { time: "13:00", act: "Almuerzo: Myeongdong Kyoja (Bib Gourmand)", area: "Myeongdong", cost: "~9 €/p", note: "Walk-in, cola rápida. Kalguksu + mandu" },
-        { time: "14:15", act: "Myeongdong: compras + Olive Young flagship", area: "Myeongdong", cost: "Variable", note: "Olive Young da 10% off a turistas con pasaporte" },
-        { time: "15:30", act: "Catedral Myeongdong + paseo final", area: "Myeongdong", cost: "Gratis", note: "Catedral neogótica, oasis tranquilo" },
-        { time: "16:00", act: "Andar 10 min al norte → Cheonggye Plaza", area: "Centro", cost: "—", note: "Plano. Escultura roja-azul 'Spring'" },
-        { time: "16:30", act: "Paseo canal Cheonggyecheon (1,5 km)", area: "Centro", cost: "Gratis", note: "Bajar al nivel del agua, fresquito" },
-        { time: "17:30", act: "⭐ Snack callejero en Gwangjang Market", area: "Jongno", cost: "8-12 €/p", note: "Bindaetteok, mayak gimbap, tteokbokki" },
-        { time: "18:30", act: "Metro a Dongdaemun (L1 una parada)", area: "Dongdaemun", cost: "1.500 KRW", note: "DDP arquitectura" },
-        { time: "19:00", act: "Heunginjimun Gate + DDP (Zaha Hadid)", area: "Dongdaemun", cost: "Gratis", note: "Foto curvas LED. Bonito al anochecer" },
-        { time: "20:30", act: "Metro vuelta a Hongdae (L4 → L2)", area: "→ Hongdae", cost: "1.500 KRW", note: "30 min" },
-        { time: "21:00", act: "Cena BBQ coreano en Hongdae", area: "Hongdae", cost: "30-40 €/p", note: "Reserva Catch Table o llamamos antes" }
-      ],
-      stops: [
-        {
-          name: "Starfield Library · COEX", kr: "별마당 도서관",
-          desc: "Centro comercial subterráneo gigante con la biblioteca de 13 m de altura llena de libros. Gratis, foto inevitable. Al lado: Kakao Friends store, Aland (moda joven), food court enorme. Apertura del día antes de bajar a Myeongdong.",
-          lat: 37.5100586, lng: 127.0601188,
-          place_id: "ChIJu5Gg2hWkfDURl7NN7FpFnis",
-          photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNeBbCYfJTh68vn2IDlvU4_hMmAiikKyt9-NFcy2jOahsKakstkKmrM61rOJv51o_0BJ_haoJBJ9c9AbhBO81QMYUit7TnhZcOlS9dsioGcN2ubq5sQMQQQFMKtU2g4lcDbwG8Bkqr-EzfE=s4800-w800-h600",
-          gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Starfield_Library_COEX.jpg/800px-Starfield_Library_COEX.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Starfield_COEX_Mall_Library.jpg/800px-Starfield_COEX_Mall_Library.jpg"]
-        },
-        {
-          name: "Myeongdong & Olive Young flagship", kr: "명동 · 올리브영",
-          desc: "Meca de compras: K-beauty, Daiso, Line Friends, Innisfree, Etude. <strong>Olive Young da 10% off a turistas con pasaporte.</strong> La calle peatonal se anima a partir de las 12:00.",
-          lat: 37.5636365, lng: 126.9826582,
-          place_id: "ChIJU0xOY-WifDURDH3iL0g38FU",
-          photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNXQz5LKXLR0EQYI3D8Gb8q_lgZCdGxR9PqBIjF-aZ8L5jVkVWHm-4_kFvHvBpz9YlD3KQkfCGkMNwvDpwQrFYlOFnFKbJaUZBLvFVx8XkIuMvgCjvXNBR9aV2PnQvVgqkrOGD9_BzQEFNfHk=s4800-w800-h600",
-          gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Myeongdong_Shopping_Street_Seoul.jpg/800px-Myeongdong_Shopping_Street_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Myeongdong_Night_Market.jpg/800px-Myeongdong_Night_Market.jpg"]
-        },
-        {
-          name: "Catedral de Myeongdong", kr: "명동성당",
-          desc: "Catedral neogótica, la católica más importante de Corea. Acceso libre, oasis tranquilísimo en medio del bullicio comercial. Hay misa diaria si alguien quiere ir.",
-          lat: 37.5633851, lng: 126.987436,
-          place_id: "ChIJs2hQTOWifDURk8inZqIttEQ",
-          photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZN2eL6PbzpAUqiLoUIaqXhZJnGkl5X0HLtC0rWCGgt03mvEheZbJqFZF0Vu6PAxTYHeqcKb5Sq4m_hGSZrELk4hl5ZhP5b4j04rbWjoYGox98dHHOe8R6NhYCgWKqtuzdGxlBquyO5qq9XS=s4800-w800-h600",
-          gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Myeongdong_Cathedral_in_Seoul.jpg/800px-Myeongdong_Cathedral_in_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Myeongdong_Cathedral_at_night.jpg/800px-Myeongdong_Cathedral_at_night.jpg"]
-        },
-        {
-          name: "Cheonggye Plaza & Stream", kr: "청계광장 · 청계천",
-          desc: "Arroyo restaurado en 2005 que atraviesa el centro. Empezamos en la plaza (escultura 'Spring' enorme) y bajamos al nivel del agua. 1,5 km hacia el este. Plano, sombra y bancos. Si veis cansancio, salimos antes y taxi.",
-          lat: 37.5691686, lng: 126.9780272,
-          place_id: "ChIJk8x74-yifDURXVhW9zZEvZk",
-          photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZPOxErn6PYqD0w362jZ4B7ylPSdeUfQqAjjeNStacQxibrDEre0ukGIg-D8WOkXwTwisns8JXv40N-R5HszUjPo3dBhfGLHwG3eoKH1FxmEF6EX5pvC9636AcQw6i3Bga_DK83gaqD2uTNfIHs=s4800-w800-h600",
-          gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cheonggyecheon_stream_Seoul.jpg/800px-Cheonggyecheon_stream_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cheonggye_Plaza_Spring_sculpture.jpg/800px-Cheonggye_Plaza_Spring_sculpture.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Cheonggyecheon_at_night.jpg/800px-Cheonggyecheon_at_night.jpg"]
-        },
-        {
-          name: "Gwangjang Market ⭐", kr: "광장시장",
-          desc: "El mercado callejero más famoso de Seúl. Vamos a probar 3-4 cosas, no a cenar. <strong>Para 8: nos dividimos en 2 mesas de 4</strong> (es muy difícil sentar a 8 juntos). Algunos puestos cobran 'seat charge' a turistas — preguntamos antes.",
-          lat: 37.5700398, lng: 126.9996036,
-          place_id: "ChIJm3V0fu2ifDURRJ8IMUijVtY",
-          photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNIXp11iS1ITR-liMqBwcf_Z9eiRGYiI40JmVdWiHta3sbndnMpDJHFnemY0Ikn8oIxUChp9KMJBE3Tb7PVXWqIKthnosgwb3MbrVfkKt3-LDcaHYmXj35nr9k9C1bx_oQ6u2Q6e05o4tIISSE=s4800-w800-h600",
-          gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Gwangjang_Market_food_stalls.jpg/800px-Gwangjang_Market_food_stalls.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Bindaetteok_at_Gwangjang_Market.jpg/800px-Bindaetteok_at_Gwangjang_Market.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mayak_Gimbap_Gwangjang.jpg/800px-Mayak_Gimbap_Gwangjang.jpg"]
-        },
-        {
-          name: "Heunginjimun & DDP", kr: "흥인지문 · 동대문디자인플라자",
-          desc: "Puerta histórica del este de Seúl junto al DDP, edificio futurista de Zaha Hadid (aluminio curvado). Túneles LED al anochecer dan fotos brutales. <strong>⭐ AQUÍ ARRANCA EL DESFILE DE FAROLILLOS DEL SÁBADO.</strong> Os familiarizáis con la zona ahora.",
-          lat: 37.5710717, lng: 127.0096571,
-          place_id: "ChIJm6x0HTujfDURbf9iX8DtJ2A",
-          photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNBRr2-q2qIRorjp6A6ZqZAB6wu9CoTCkPO1GMZseFjOn9QTU3XjSpSCyhqoXnVeQGw-YpJK_TooZpTVp2Gqpbb2OW1qyEZi0GUNZeRn2zODb9zKmW5eD_duMfDHIhCA1C5PdOZB8xS21e4=s4800-w800-h600",
-          gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dongdaemun_Design_Plaza_Seoul.jpg/800px-Dongdaemun_Design_Plaza_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/DDP_at_night_LED_Roses.jpg/800px-DDP_at_night_LED_Roses.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Heunginjimun_Gate.jpg/800px-Heunginjimun_Gate.jpg"]
-        }
-      ],
-      market_picks: [
-        { name: "Bindaetteok", kr: "빈대떡", price: "~5 €", note: "Tortita de mungo crujiente. No picante." },
-        { name: "Mayak gimbap", kr: "마약김밥", price: "~3 €", note: "'Kimbap-droga': mini rollos con mostaza dulce. Adictivo, no picante." },
-        { name: "Yukhoe", kr: "육회", price: "~15 €", note: "Steak tartar coreano con pera y huevo. Solo si nos atrevemos con carne cruda." },
-        { name: "Tteokbokki", kr: "떡볶이", price: "~5 €", note: "Pastel de arroz con salsa picante. Avisamos de tolerancia." },
-        { name: "Sundae", kr: "순대", price: "~5 €", note: "Morcilla coreana. Auténtico pero no para todos." },
-        { name: "Kalguksu de almeja", kr: "조개칼국수", price: "~6 €", note: "Por si todavía hay hambre." }
-      ],
-      meals: [
-        { type: "Almuerzo", name: "Myeongdong Kyoja", kr: "명동교자", price: "~9 €/p", note: "Bib Gourmand. Walk-in, sirven en 5 min. Kalguksu de carne (8.000 KRW) + mandu para compartir." },
-        { type: "Cena BBQ Hongdae", name: "Maple Tree House", kr: "메이플트리하우스", price: "~35 €/p", note: "BBQ Hanwoo media-alta, mesas con sillas, acepta grupos. Reservar." },
-        { type: "Cena BBQ alternativa", name: "Mapo Galbi", kr: "마포갈비", price: "~25 €/p", note: "Galbi marinada (costilla), más barato y popular entre coreanos." },
-        { type: "💎 Capricho", name: "Born&Bred", kr: "본앤브레드", price: "50-60 €/p", note: "Bib Gourmand, Hanwoo (vacuno premium). Reservar 1 semana antes vía Catch Table." }
-      ],
-      tips: [
-        { icon: "💡", text: "<strong>Para 8 en Gwangjang:</strong> nos dividimos en 2 mesas de 4, nos encontramos en la salida. Los precios son baratos pero algunos puestos cobran 'seat charge' a turistas." },
-        { icon: "🚻", text: "Baños públicos: Myeongdong Cathedral y DDP." }
-      ]
+      name: "Bongeunsa Temple", kr: "봉은사",
+      desc: "Templo budista del s. VIII rodeado por los rascacielos de Gangnam. Buda gigante de 23 m en lo alto. Calmado, contraste muy fotogénico. Para esta semana ya tendrán los farolillos del festival colgados — especialmente bonito como apertura del día.",
+      lat: 37.514852, lng: 127.0573766,
+      place_id: "ChIJgZn6QWmkfDURaU3kwlecaEU",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZMP6E-WR1JcGd3Lc0p2kGokq_vjmfvPb-zyeVkw3kA-oK47CRBHcsb9Kxla3mcOPPBk3bGUGJFfVoQdGN6umyRo24rW5nkmI5p_HIEqqlID8G7to8hsc53Jf2hjj-y6YMsFWDDHihag3-wBZgo=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Bongeunsa_Temple_Buddha.jpg/800px-Bongeunsa_Temple_Buddha.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Bongeunsa_Temple_Seoul.jpg/800px-Bongeunsa_Temple_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Bongeunsa_lanterns_for_Buddha_birthday.jpg/800px-Bongeunsa_lanterns_for_Buddha_birthday.jpg"]
     },
+    {
+      name: "Palacio Gyeongbokgung", kr: "경복궁",
+      desc: "El palacio principal de la dinastía Joseon. Hay dos cambios de guardia: el grande de Gwanghwamun a las 10:00 y 14:00, y el de Heungnyemun a las 11:00 y 13:00. <strong>Recomendamos el de las 11:00</strong> — más margen y menos masa.",
+      lat: 37.579617, lng: 126.977041,
+      place_id: "ChIJod7tSseifDUR9hXHLFNGMIs",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZOcmqYnSdxQarwQxFVMTsplEg-MRjSxfUX_36kp2aZ1YB9jQhQOYyEhkpMs3mO0Hahhm52tLbOWtX7BzHLZS1gAxwn2eA4KxnlPKyXyEoaUhpo2HaTpDgMAGuEIzm8diO8eCQH4JlPGYayVw4Q=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Korea-Seoul-Gyeongbokgung-Geunjeongjeon-01.jpg/800px-Korea-Seoul-Gyeongbokgung-Geunjeongjeon-01.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Royal_Guard_Changing_Ceremony_at_Gyeongbokgung.jpg/800px-Royal_Guard_Changing_Ceremony_at_Gyeongbokgung.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Gyeonghoeru_Pavilion_Gyeongbokgung.jpg/800px-Gyeonghoeru_Pavilion_Gyeongbokgung.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Hyangwonjeong_Pavilion_at_Gyeongbokgung_Palace.jpg/800px-Hyangwonjeong_Pavilion_at_Gyeongbokgung_Palace.jpg"]
+    },
+    {
+      name: "Tosokchon Samgyetang", kr: "토속촌 삼계탕",
+      desc: "El samgyetang más famoso de Seúl. Pollo entero relleno de arroz, ginseng, dátiles y ajo, en sopa cremosa nutritiva y nada picante. Walk-in, mesa rotación 30 min, sillas occidentales. Pedir clásico (15.000 KRW) o pollo negro (22.000 KRW).",
+      lat: 37.5777786, lng: 126.9715909,
+      place_id: "ChIJb5OOGL6ifDURU29ID3t8aOA",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZMv900juEdcU5t8iQfAG92k4PXQhGGgZw9p37aM0zIY6uttlq1_axmbnSVsPO8swN0YDHrUm7ejex4ZskX-pxGLwCe_8vfl9zCI7W7jK2FLCPGXS10FSVRqnobguMC1oqYz3vUZ_E5VFTxaqnWatPqf5A=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Korean_cuisine-Samgyetang-01.jpg/800px-Korean_cuisine-Samgyetang-01.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Samgyetang_2.jpg/800px-Samgyetang_2.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Korean.cuisine-Samgyetang-04.jpg/800px-Korean.cuisine-Samgyetang-04.jpg"]
+    },
+    {
+      name: "Bukchon Hanok Village", kr: "북촌한옥마을",
+      desc: "<strong>Truco para nuestro grupo:</strong> NO subimos andando — es una cuesta muy larga. Cogemos 2 taxis Kakao desde Tosokchon directamente al mirador alto ('Bukchon-ro 11-gil photo spot'). Bajamos dando un paseo, parando en Cafe Onion Anguk. Aquí vive gente — voz baja.",
+      lat: 37.5814696, lng: 126.9849519,
+      place_id: "ChIJT8H4r9qifDURmuXJ_6m6vM0",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZOm1F-plWHf9vC_X76tcZFXSwkFycLWEAdO2rU16_vM9TyrqJWpc0YfBJZEVLCRH8sBUjZjJm2iflZVvlgfO12eAo80hJPT2SOiAxZj2AOBMslxIW53ONUD3uH_DnPKkMV6PKy4L_PrzGhICyE=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Bukchon_Hanok_Village_-_panoramio_%282%29.jpg/800px-Bukchon_Hanok_Village_-_panoramio_%282%29.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Bukchon_Hanok_Village_in_Seoul.jpg/800px-Bukchon_Hanok_Village_in_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Bukchon-ro_11-gil_Bukchon_Hanok_Village.jpg/800px-Bukchon-ro_11-gil_Bukchon_Hanok_Village.jpg"]
+    },
+    {
+      name: "Insadong · Ssamzigil", kr: "인사동 쌈지길",
+      desc: "Calle de la artesanía coreana. Plana, ideal después de Bukchon. Ssamzigil es un edificio en espiral con tiendas de hanji (papel coreano), cerámicas, té, sellos personalizables. Bueno para regalos.",
+      lat: 37.5743024, lng: 126.9849036,
+      place_id: "ChIJQRutlcKifDURiMoaUPYmWX4",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZMjfE9oPhpgX5jOLW_fjtbyvtrDJzLobQudHP2ECVkobkbEjuREFglg4H7BjZPyQXAzJ6OkaxblkN5m8NoLta_9nwH_SMReZ3gukWd1gl2ZxvciF1RHvUtxcwT3-2NfOtbbscF9S0KO-IIzGxs=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Insadong_street.jpg/800px-Insadong_street.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Ssamziegil_in_Insadong.jpg/800px-Ssamziegil_in_Insadong.jpg"]
+    },
+    {
+      name: "Myeongdong & Olive Young flagship", kr: "명동 · 올리브영",
+      desc: "Meca de compras: K-beauty, Daiso, Line Friends, Innisfree, Etude. <strong>Olive Young da 10% off a turistas con pasaporte.</strong> La calle peatonal se anima al anochecer — llegamos en el momento perfecto.",
+      lat: 37.5636365, lng: 126.9826582,
+      place_id: "ChIJU0xOY-WifDURDH3iL0g38FU",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNXQz5LKXLR0EQYI3D8Gb8q_lgZCdGxR9PqBIjF-aZ8L5jVkVWHm-4_kFvHvBpz9YlD3KQkfCGkMNwvDpwQrFYlOFnFKbJaUZBLvFVx8XkIuMvgCjvXNBR9aV2PnQvVgqkrOGD9_BzQEFNfHk=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Myeongdong_Shopping_Street_Seoul.jpg/800px-Myeongdong_Shopping_Street_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Myeongdong_Night_Market.jpg/800px-Myeongdong_Night_Market.jpg"]
+    },
+    {
+      name: "Catedral de Myeongdong", kr: "명동성당",
+      desc: "Catedral neogótica, la católica más importante de Corea. Acceso libre, oasis tranquilísimo en medio del bullicio comercial. Hay misa diaria si alguien quiere ir.",
+      lat: 37.5633851, lng: 126.987436,
+      place_id: "ChIJs2hQTOWifDURk8inZqIttEQ",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZN2eL6PbzpAUqiLoUIaqXhZJnGkl5X0HLtC0rWCGgt03mvEheZbJqFZF0Vu6PAxTYHeqcKb5Sq4m_hGSZrELk4hl5ZhP5b4j04rbWjoYGox98dHHOe8R6NhYCgWKqtuzdGxlBquyO5qq9XS=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Myeongdong_Cathedral_in_Seoul.jpg/800px-Myeongdong_Cathedral_in_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Myeongdong_Cathedral_at_night.jpg/800px-Myeongdong_Cathedral_at_night.jpg"]
+    },
+    {
+      name: "Banpo Bridge Rainbow Fountain", kr: "반포대교 무지개분수",
+      desc: "Cierre de la noche junto al río Han. Espectáculo de fuentes más largo del mundo (Guinness). Pase de las 21:00 (20 min). Metro Express Bus Terminal, salida 8-1, 15 min andando hasta Banpo Hangang Park (lado sur). <strong>Se cancela si llueve o sopla viento &gt;7 m/s.</strong>",
+      lat: 37.5126335, lng: 126.9984783,
+      place_id: "ChIJeVnK5X-hfDURv2fEEK-332M",
+      photo: "https://lh3.googleusercontent.com/places/ANXAkqHNWXSy4-seTQfe_HIULGGFlxmNytBdo6lp2j12ZBCvKXtBNl5n1JrI0BSa9Ep87rhJjLYLyPQFPlxHFIur2FrC9w61OnZ4Lg=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Banpo_Bridge_Rainbow_Fountain.jpg/800px-Banpo_Bridge_Rainbow_Fountain.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Banpo_Bridge_Moonlight_Rainbow_Fountain.jpg/800px-Banpo_Bridge_Moonlight_Rainbow_Fountain.jpg"]
+    }
+  ],
+  meals: [
+    { type: "Almuerzo principal", name: "Tosokchon Samgyetang", kr: "토속촌 삼계탕", price: "~14 €/p", note: "Walk-in, mesas de 4 (tendremos 2 mesas). Plato: ginseng chicken soup tradicional." },
+    { type: "Cena principal", name: "Myeongdong Kyoja", kr: "명동교자", price: "~9 €/p", note: "Bib Gourmand. Walk-in, sirven en 5 min. Kalguksu de carne (8.000 KRW) + mandu para compartir. Bueno para grupo grande." },
+    { type: "Cena alternativa", name: "Gogung Suragan", kr: "고궁수라간", price: "~14 €/p", note: "Bibimbap tradicional de Jeonju en cuenco de piedra caliente. Suave, ideal para mayores." },
+    { type: "Cena alternativa 2", name: "Wang Bi Jib", kr: "왕비집", price: "~30 €/p", note: "BBQ Hanwoo en Myeongdong, mesas grandes con extractor, acepta grupos. Reservar." }
+  ],
+  tips: [
+    { icon: "💡", text: "<strong>Hanbok:</strong> alquiler 15-25 €/p (3-4h) y entrada al palacio gratis. Para 8 contamos 90 min de preparación. Tiendas: Hanboknam, Oneday Hanbok." },
+    { icon: "💡", text: "Olive Young da 10% de descuento a turistas con pasaporte — recordadlo al pagar." },
+    { icon: "🚻", text: "Baños limpios: dentro del palacio, oficina de turismo de Insadong, Ssamzigil y Olive Young de Myeongdong." }
+  ],
+  gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Myeongdong_Shopping_Street_Seoul.jpg/800px-Myeongdong_Shopping_Street_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Myeongdong_Night_Market.jpg/800px-Myeongdong_Night_Market.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Myeongdong_Cathedral_in_Seoul.jpg/800px-Myeongdong_Cathedral_in_Seoul.jpg"]
+},
 
     {
       n: 4, dow: "Vie", date: "15 may", neighborhood: "Suwon (excursión)",
