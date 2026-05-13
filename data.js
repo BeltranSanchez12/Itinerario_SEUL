@@ -161,6 +161,7 @@ window.ITINERARY = {
   ],
   gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Myeongdong_Shopping_Street_Seoul.jpg/800px-Myeongdong_Shopping_Street_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Myeongdong_Night_Market.jpg/800px-Myeongdong_Night_Market.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Myeongdong_Cathedral_in_Seoul.jpg/800px-Myeongdong_Cathedral_in_Seoul.jpg"]
 },
+    
 {
   n: 3, dow: "Jue", date: "14 may", neighborhood: "Seongsu-dong · Seoul Forest",
   title: "Seongsu — el Brooklyn tech de Seúl",
