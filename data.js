@@ -162,98 +162,116 @@ window.ITINERARY = {
   gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Myeongdong_Shopping_Street_Seoul.jpg/800px-Myeongdong_Shopping_Street_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Myeongdong_Night_Market.jpg/800px-Myeongdong_Night_Market.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Myeongdong_Cathedral_in_Seoul.jpg/800px-Myeongdong_Cathedral_in_Seoul.jpg"]
 },
 {
-  n: 3, dow: "Jue", date: "14 may", neighborhood: "Gangnam · Centro · Ikseon-dong",
-  title: "Gangnam, canal, mercados y hanoks",
-  summary: "Mañana en Gangnam con la biblioteca Starfield y foto de Gangnam Style, almuerzo de gomtang histórico (Bib Gourmand desde 1939), paseo por el canal Cheonggyecheon, snacks callejeros en Gwangjang, arquitectura de Zaha Hadid en DDP al anochecer y cierre con cena en los hanoks reconvertidos de Ikseon-dong.",
-  walked: "~10-11 km (todo plano)",
+  n: 3, dow: "Jue", date: "14 may", neighborhood: "Seongsu-dong · Seoul Forest",
+  title: "Seongsu — el Brooklyn tech de Seúl",
+  summary: "Día de barrio: Seoul Forest por la mañana, pasada por KWANGYA (sede de SM Entertainment, donde tienen oficinas Hyundai Glovis y Socar también), almuerzo Bib Gourmand en Neungdong Minari, café icónico en Onion, flagships brutales de Dior y Tamburins puerta a puerta, concept space en LCDC y cena Bib Gourmand de cerdo al carbón en Ggupdang. Todo L2 directa Hongdae ↔ Seongsu sin transbordos, y dentro del barrio todo a pie.",
+  walked: "~9 km (todo plano, paseos de 5-10 min entre stops)",
   schedule: [
-    { time: "09:30", act: "Desayuno rápido en Hongdae", area: "Hongdae", cost: "8 €/p", note: "Pancake Originals (suflé) o café local" },
-    { time: "10:15", act: "Metro Hongik (L2) → Samseong (L2) directo", area: "→ Gangnam", cost: "1.500 KRW", note: "35 min" },
-    { time: "11:00", act: "COEX Mall + Starfield Library (foto + paseo)", area: "Gangnam", cost: "Gratis", note: "Biblioteca de 13 m, Kakao Friends store, Aland" },
-    { time: "12:00", act: "Estatua Gangnam Style (foto rápida)", area: "Gangnam", cost: "Gratis", note: "5 min, salida 5 de Samseong" },
-    { time: "12:15", act: "Metro Samseong (L2) → Euljiro 1-ga (L2)", area: "→ Myeongdong", cost: "1.500 KRW", note: "30 min. Salida 5 o 6" },
-    { time: "13:00", act: "⭐ Almuerzo: Hadongkwan (gomtang Bib Gourmand)", area: "Myeongdong", cost: "~12 €/p", note: "Desde 1939. Walk-in only, dine-in only. Sirven en 2 min. Llegar antes de las 14:00 — cierra a las 16:00" },
-    { time: "14:00", act: "Andar 10 min al norte → Cheonggye Plaza", area: "Centro", cost: "—", note: "Plano. Escultura roja-azul 'Spring'" },
-    { time: "14:30", act: "Paseo canal Cheonggyecheon (1,5 km hacia el este)", area: "Centro", cost: "Gratis", note: "Bajar al nivel del agua, fresquito. Si veis cansancio, salimos antes y taxi" },
-    { time: "15:45", act: "⭐ Snacks callejeros en Gwangjang Market", area: "Jongno", cost: "8-12 €/p", note: "Bindaetteok, mayak gimbap, tteokbokki. Ligero — la cena es en Ikseon" },
-    { time: "16:45", act: "Andar 5 min a Ikseon-dong", area: "Ikseon-dong", cost: "—", note: "Paseo por los callejones de hanoks" },
-    { time: "17:00", act: "Café en Ikseon-dong (Madang Flower Café u Onion)", area: "Ikseon-dong", cost: "~5 €/p", note: "Patio precioso, ideal para sentarse y descansar" },
-    { time: "18:30", act: "Metro Jongno 3-ga (L1) → Dongdaemun (L1) — 1 parada", area: "→ Dongdaemun", cost: "1.500 KRW", note: "Para ver DDP al anochecer" },
-    { time: "19:00", act: "Heunginjimun Gate + DDP (Zaha Hadid)", area: "Dongdaemun", cost: "Gratis", note: "Foto curvas LED. <strong>⭐ Aquí arranca el desfile de farolillos del sábado</strong> — reconocimiento de zona" },
-    { time: "20:15", act: "Vuelta a Ikseon-dong (taxi o andando 15 min)", area: "→ Ikseon-dong", cost: "5.000 KRW", note: "Andando es plano y los callejones de noche están bonitos" },
-    { time: "20:45", act: "⭐ Cena: Ikseon Aetteut o GUO", area: "Ikseon-dong", cost: "25-30 €/p", note: "Reservamos Catch Table 2-3 días antes" },
-    { time: "22:15", act: "Metro Jongno 3-ga (L3 → L2) vuelta a Hongdae", area: "→ Hongdae", cost: "1.500 KRW", note: "30 min" }
+    { time: "09:30", act: "Desayuno rápido en Hongdae", area: "Hongdae", cost: "8 €/p", note: "Pancake Originals o café local" },
+    { time: "10:15", act: "Metro Hongik Univ (L2) → Ttukseom (L2) directo", area: "→ Seongsu", cost: "1.500 KRW", note: "6 paradas, ~25 min. Sin transbordos" },
+    { time: "10:50", act: "Salida 8 de Ttukseom → Seoul Forest (3 min)", area: "Seoul Forest", cost: "—", note: "Plano" },
+    { time: "11:00", act: "⭐ Seoul Forest — paseo + jardín de ciervos", area: "Seoul Forest", cost: "Gratis", note: "Parque enorme, esculturas, lago. Abierto 24h" },
+    { time: "12:30", act: "Walk al complejo SM (2 min al este)", area: "→ KWANGYA", cost: "—", note: "Justo pegado al parque" },
+    { time: "12:35", act: "⭐ KWANGYA — sede SM Entertainment + tienda oficial", area: "Seongsu", cost: "Merch desde 5 €", note: "Edificio Acro Seoul Forest D-Tower. Sede de aespa/NCT/Riize. Mismo edificio: Hyundai Glovis y Socar. Tienda KWANGYA@Seoul en B1 con merch, pantalla LED gigante" },
+    { time: "13:05", act: "Walk hacia Seongsu cafés (10 min)", area: "→ Seongsu", cost: "—", note: "Plano" },
+    { time: "13:15", act: "⭐ Almuerzo: Neungdong Minari (Bib Gourmand 2025)", area: "Seongsu", cost: "~18 €/p", note: "Gomtang de minari (apio de agua) + yukhoe bibimbap. Servicio en 5 min. Cola fluida. Bib Gourmand nuevo este año" },
+    { time: "14:30", act: "Walk 5 min al norte", area: "→ Onion", cost: "—", note: "Achasan-ro" },
+    { time: "14:45", act: "⭐ Café Onion Seongsu (fábrica reconvertida)", area: "Seongsu", cost: "~7 €/p", note: "EL Pandoro y el pan dulce con sal. Terraza arriba. Aesthetic brutal" },
+    { time: "15:45", act: "Walk a Daelim Changgo (5 min al sur)", area: "→ Daelim", cost: "—", note: "" },
+    { time: "16:00", act: "⭐ Daelim Changgo + Seongsu Yeonbang", area: "Seongsu", cost: "Gratis paseo", note: "Almacén de ladrillo de los 70 renovado 2024 con Musinsa. Rooftop nuevo con vistas. Yeonbang al lado (antigua fábrica de zapatos con tiendas indie)" },
+    { time: "16:45", act: "Walk a Dior + Tamburins (5 min)", area: "→ Flagships", cost: "—", note: "Yeonmujang 5-gil. Están puerta a puerta" },
+    { time: "17:00", act: "⭐ Dior Seongsu + Tamburins flagship", area: "Seongsu", cost: "Gratis entrada", note: "Dior: castillo blanco floral. Tamburins: champiñón de perfumes industrial. Entrada libre, fotos brutales" },
+    { time: "18:00", act: "LCDC Seoul (10 min al este)", area: "Seongsu", cost: "Gratis", note: "Concept space multi-marca, 4 plantas curadas. <strong>Uno de la familia se separa aquí y va a apuntarse al waitlist de Ggupdang (10 min andando) — abre las reservas a las 15:00 pero el waitlist arranca tarde</strong>" },
+    { time: "19:00", act: "Walk a Ggupdang (6 min)", area: "→ Cena", cost: "—", note: "" },
+    { time: "19:15", act: "⭐ Cena: Ggupdang Seongsu (Bib Gourmand)", area: "Seongsu", cost: "~30 €/p", note: "Cerdo al carbón (Kokumi moksal + samgyeopsal), arroz Kokumi con caldo de bonito, pasta al gochujang. Sirve el personal a la mesa" },
+    { time: "21:15", act: "Walk a Seongsu station (7 min) → L2 Hongik Univ", area: "→ Hongdae", cost: "1.500 KRW", note: "L2 directa, ~25 min" }
   ],
   stops: [
     {
-      name: "Starfield Library · COEX", kr: "별마당 도서관",
-      desc: "Centro comercial subterráneo gigante con la biblioteca de 13 m de altura llena de libros. Gratis, foto inevitable. Al lado: Kakao Friends store, Aland (moda joven), food court enorme. Apertura del día antes de bajar a Myeongdong.",
-      lat: 37.5100586, lng: 127.0601188,
-      place_id: "ChIJu5Gg2hWkfDURl7NN7FpFnis",
-      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNeBbCYfJTh68vn2IDlvU4_hMmAiikKyt9-NFcy2jOahsKakstkKmrM61rOJv51o_0BJ_haoJBJ9c9AbhBO81QMYUit7TnhZcOlS9dsioGcN2ubq5sQMQQQFMKtU2g4lcDbwG8Bkqr-EzfE=s4800-w800-h600",
-      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Starfield_Library_COEX.jpg/800px-Starfield_Library_COEX.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Starfield_COEX_Mall_Library.jpg/800px-Starfield_COEX_Mall_Library.jpg"]
+      name: "Seoul Forest", kr: "서울숲",
+      desc: "Parque enorme abierto 24h, gratis. Bosque de ciervos, lago, esculturas, senderos amplios. Perfecto para arrancar el día con calma. Baños limpios, bancos por todos lados. <strong>Mejor entrada: salida 8 de Ttukseom (L2)</strong>, 3 min andando.",
+      lat: 37.5443878, lng: 127.0374424,
+      place_id: "ChIJK_b0UX2jfDURmkYPvmWYm90",
+      photo: "", gallery: []
     },
     {
-      name: "Hadongkwan ⭐", kr: "하동관",
-      desc: "Gomtang (sopa de hueso de ternera) desde 1939, Bib Gourmand de Michelin. Solo caldo claro, ternera en lonchas y arroz — ajustáis sal y cebolleta al gusto. Cero picante, muy reconfortante. <strong>Walk-in only, dine-in only.</strong> Sirven en 2 minutos: se pide y paga en la entrada, luego te sientas. <strong>Cierra a las 16:00 (a veces antes si se acaba el caldo)</strong> — llegar como muy tarde a las 14:00. ~18.000 KRW.",
-      lat: 37.5643946, lng: 126.9850185,
-      place_id: "ChIJvZjTMWC9fDURxnT8dx21N3U",
-      photo: "",
-      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Korean_soup-Seolleongtang-01.jpg/800px-Korean_soup-Seolleongtang-01.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Gomtang.jpg/800px-Gomtang.jpg"]
+      name: "KWANGYA · Sede SM Entertainment ⭐", kr: "광야 · SM 엔터테인먼트",
+      desc: "<strong>El epicentro tech-entertainment de Seongsu.</strong> Acro Seoul Forest D-Tower: sede oficial de SM Entertainment (aespa, NCT, Riize, EXO) desde 2021. En el mismo edificio: <strong>Hyundai Glovis y Socar</strong> (la carsharing app coreana). El acceso a las oficinas está restringido pero el lobby café y la pizzería Gordon's del sótano son públicas. <strong>Tienda KWANGYA@Seoul en B1</strong>: merch oficial, pantalla LED gigante con MVs, máquina de fotos con idols. SM Artist & Music Center (2023, salas de ensayo) está a 200 m. Toda la zona es parte del proyecto del Ayuntamiento de hacer aquí el <strong>mayor hub de startups del mundo (100.000 m²) para 2030</strong>.",
+      lat: 37.5444107, lng: 127.0437792,
+      place_id: "ChIJVVjCIW6kfDURRol1aCv8abk",
+      photo: "", gallery: []
     },
     {
-      name: "Cheonggye Plaza & Stream", kr: "청계광장 · 청계천",
-      desc: "Arroyo restaurado en 2005 que atraviesa el centro. Empezamos en la plaza (escultura 'Spring' enorme) y bajamos al nivel del agua. 1,5 km hacia el este. Plano, sombra y bancos. Si veis cansancio, salimos antes y taxi.",
-      lat: 37.5691686, lng: 126.9780272,
-      place_id: "ChIJk8x74-yifDURXVhW9zZEvZk",
-      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZPOxErn6PYqD0w362jZ4B7ylPSdeUfQqAjjeNStacQxibrDEre0ukGIg-D8WOkXwTwisns8JXv40N-R5HszUjPo3dBhfGLHwG3eoKH1FxmEF6EX5pvC9636AcQw6i3Bga_DK83gaqD2uTNfIHs=s4800-w800-h600",
-      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cheonggyecheon_stream_Seoul.jpg/800px-Cheonggyecheon_stream_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cheonggye_Plaza_Spring_sculpture.jpg/800px-Cheonggye_Plaza_Spring_sculpture.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Cheonggyecheon_at_night.jpg/800px-Cheonggyecheon_at_night.jpg"]
+      name: "Neungdong Minari ⭐ (Bib Gourmand)", kr: "능동미나리",
+      desc: "<strong>Bib Gourmand Michelin 2025 nuevo este año.</strong> Especialidad: minari (apio de agua coreano) — gomtang de minari (sopa de ternera con minari) y yukhoe bibimbap (steak tartar) son los platos estrella. Servicio rapidísimo (5 min). Cola fluida — abren a las 09:30. El aceite de sésamo que usan es excepcional. Sucursales también en Hannam y Yeouido pero ésta es la original. <strong>Para 8 hay que ir entre 13:00-13:30 para encajar.</strong>",
+      lat: 37.542748, lng: 127.0539607,
+      place_id: "ChIJxft0BAClfDURKXff2Q8CBWU",
+      photo: "", gallery: []
     },
     {
-      name: "Gwangjang Market ⭐", kr: "광장시장",
-      desc: "El mercado callejero más famoso de Seúl. Vamos a probar 3-4 cosas como snack, no a cenar (cena es en Ikseon-dong). <strong>Para 8: nos dividimos en 2 mesas de 4</strong> (es muy difícil sentar a 8 juntos). Algunos puestos cobran 'seat charge' a turistas — preguntamos antes.",
-      lat: 37.5700398, lng: 126.9996036,
-      place_id: "ChIJm3V0fu2ifDURRJ8IMUijVtY",
-      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNIXp11iS1ITR-liMqBwcf_Z9eiRGYiI40JmVdWiHta3sbndnMpDJHFnemY0Ikn8oIxUChp9KMJBE3Tb7PVXWqIKthnosgwb3MbrVfkKt3-LDcaHYmXj35nr9k9C1bx_oQ6u2Q6e05o4tIISSE=s4800-w800-h600",
-      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Gwangjang_Market_food_stalls.jpg/800px-Gwangjang_Market_food_stalls.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Bindaetteok_at_Gwangjang_Market.jpg/800px-Bindaetteok_at_Gwangjang_Market.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mayak_Gimbap_Gwangjang.jpg/800px-Mayak_Gimbap_Gwangjang.jpg"]
+      name: "Cafe Onion Seongsu ⭐", kr: "어니언 성수",
+      desc: "EL café fundacional de Seongsu. Antigua fábrica conservada con paredes desnudas y techo industrial. Famoso por el <strong>Pandoro</strong> (montaña de azúcar glas) y el pan dulce con sal. Terraza en el tejado. Bandeja, pagas, buzzer.",
+      lat: 37.5447328, lng: 127.0582091,
+      place_id: "ChIJHb1ypJWkfDURb2d4XCjLluM",
+      photo: "", gallery: []
     },
     {
-      name: "Ikseon-dong Hanok Village", kr: "익선동",
-      desc: "El barrio joya. Hanoks de los años 30 reconvertidos en cafeterías, restaurantes y boutiques de diseño. Más auténtico que Bukchon de noche, ambiente menos turístico y más coreano joven. Pasamos la tarde-noche aquí: café antes de DDP y cena de vuelta.",
-      lat: 37.5737132, lng: 126.9901271,
-      place_id: "ChIJe4Jbot2ifDUR2zWhruwyaow",
-      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZOx5jj-1RDCPrNXHvz7_mWOIuWATPjFcNnSoAMtao8VshVFnCbZGGDVPU1tRcnWzfxsVL2AkYOyoIG1eIxFyRaLf7tPqDlXFITVAt9OnfEvspbPpMDzrTEcMzf7gw2RNeg1mawLN34n2Du0udM=s4800-w800-h600",
-      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ikseon-dong_alley.jpg/800px-Ikseon-dong_alley.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ikseon-dong_hanok_cafe.jpg/800px-Ikseon-dong_hanok_cafe.jpg"]
+      name: "Daelim Changgo + Seongsu Yeonbang", kr: "대림창고 · 성수연방",
+      desc: "Daelim: almacén de ladrillo rojo de los 70 reconvertido en gallery-café-bistro. <strong>Renovado en 2024 con Musinsa</strong> — rooftop nuevo con vistas sobre Seongsu, ideal al atardecer. Yeonbang justo al lado: antigua fábrica de zapatos con tiendas indie alrededor de un patio. Se hacen los dos en 45 min.",
+      lat: 37.5418384, lng: 127.0564636,
+      place_id: "ChIJi_M445OkfDURBV_ePY2qCHo",
+      photo: "", gallery: []
     },
     {
-      name: "Heunginjimun & DDP", kr: "흥인지문 · 동대문디자인플라자",
-      desc: "Puerta histórica del este de Seúl junto al DDP, edificio futurista de Zaha Hadid (aluminio curvado). Túneles LED al anochecer dan fotos brutales. <strong>⭐ AQUÍ ARRANCA EL DESFILE DE FAROLILLOS DEL SÁBADO.</strong> Os familiarizáis con la zona ahora.",
-      lat: 37.5710717, lng: 127.0096571,
-      place_id: "ChIJm6x0HTujfDURbf9iX8DtJ2A",
-      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNBRr2-q2qIRorjp6A6ZqZAB6wu9CoTCkPO1GMZseFjOn9QTU3XjSpSCyhqoXnVeQGw-YpJK_TooZpTVp2Gqpbb2OW1qyEZi0GUNZeRn2zODb9zKmW5eD_duMfDHIhCA1C5PdOZB8xS21e4=s4800-w800-h600",
-      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dongdaemun_Design_Plaza_Seoul.jpg/800px-Dongdaemun_Design_Plaza_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/DDP_at_night_LED_Roses.jpg/800px-DDP_at_night_LED_Roses.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Heunginjimun_Gate.jpg/800px-Heunginjimun_Gate.jpg"]
+      name: "Dior Seongsu", kr: "디올 성수",
+      desc: "Flagship espectacular con forma de castillo blanco floral. Entrada gratuita, café Dior dentro. Por la noche se ilumina. <strong>Tamburins literalmente al lado</strong> (1 min andando) — se hacen juntos.",
+      lat: 37.5437583, lng: 127.0522559,
+      place_id: "ChIJDV1oNt2lfDUR9Eyha0o0usA",
+      photo: "", gallery: []
+    },
+    {
+      name: "Tamburins Seongsu", kr: "탬버린즈 성수",
+      desc: "Flagship de la marca de perfumes más cool de Corea (Jennie de Blackpink embajadora). Espacio industrial-brutalista con <strong>champiñón gigante de perfumes</strong> en el centro. Chimenea. Las dependientas dejan probar todo con calma.",
+      lat: 37.5437671, lng: 127.0526044,
+      place_id: "ChIJYaYyExWlfDURaI0QfIIWBHo",
+      photo: "", gallery: []
+    },
+    {
+      name: "LCDC Seoul", kr: "엘씨디씨 서울",
+      desc: "Concept space multi-marca de 4 plantas. Cada planta con tiendas indie curadas (moda, perfumes, papelería, deco), café arriba y patio interior. Mucho más calmado que las flagships.",
+      lat: 37.5415795, lng: 127.0614594,
+      place_id: "ChIJM_O6RYqlfDURu7rlx8Fvdtg",
+      photo: "", gallery: []
+    },
+    {
+      name: "Ggupdang Seongsu ⭐ (Bib Gourmand)", kr: "꿉당 성수",
+      desc: "<strong>Bib Gourmand Michelin.</strong> Cerdo al carbón — Kokumi moksal (paleta de cerdo) y samgyeopsal (panceta), 17.000 KRW por plato. Lo cocinan en la mesa. <strong>Arroz Kokumi</strong> (cocido con caldo de bonito, umami brutal) y <strong>pasta al gochujang</strong> son must. <strong>Cola de 1-2.5h sin reserva</strong>. Estrategia para 8: uno del grupo va a apuntarse al waitlist sobre las 17:30-18:00 mientras los demás están en LCDC.",
+      lat: 37.5432243, lng: 127.057537,
+      place_id: "ChIJiWY0E1alfDURMaKxAl4f4uA",
+      photo: "", gallery: []
     }
   ],
-  market_picks: [
-    { name: "Bindaetteok", kr: "빈대떡", price: "~5 €", note: "Tortita de mungo crujiente. No picante." },
-    { name: "Mayak gimbap", kr: "마약김밥", price: "~3 €", note: "'Kimbap-droga': mini rollos con mostaza dulce. Adictivo, no picante." },
-    { name: "Yukhoe", kr: "육회", price: "~15 €", note: "Steak tartar coreano con pera y huevo. Solo si nos atrevemos con carne cruda." },
-    { name: "Tteokbokki", kr: "떡볶이", price: "~5 €", note: "Pastel de arroz con salsa picante. Avisamos de tolerancia." },
-    { name: "Sundae", kr: "순대", price: "~5 €", note: "Morcilla coreana. Auténtico pero no para todos." },
-    { name: "Kalguksu de almeja", kr: "조개칼국수", price: "~6 €", note: "Por si todavía hay hambre." }
+  tech_y_flagships: [
+    { name: "SM Entertainment HQ (KWANGYA)", kr: "광야", note: "Sede de aespa/NCT/Riize. Acro Seoul Forest D-Tower. También Hyundai Glovis + Socar" },
+    { name: "Tienda KWANGYA@Seoul", kr: "광야앳서울", note: "B1 del edificio SM. Merch oficial, pantalla LED gigante. 10:30-20:00" },
+    { name: "SM Artist & Music Center", kr: "SM 아티스트 뮤직센터", note: "Segundo edificio SM (2023). Salas de ensayo. Solo exterior" },
+    { name: "Seoul Unicorn Startup Hub (futuro)", kr: "서울 유니콘 창업 허브", note: "Proyecto: mayor hub de startups del mundo para 2030, 100.000 m² frente a Seoul Forest" },
+    { name: "Dior Seongsu", kr: "디올 성수", note: "Castillo blanco floral, flagship asia" },
+    { name: "Tamburins flagship", kr: "탬버린즈 성수", note: "Perfumes brutalismo + champiñón gigante" }
   ],
   meals: [
-    { type: "Almuerzo principal", name: "Hadongkwan", kr: "하동관", price: "~12 €/p", note: "Bib Gourmand desde 1939. Gomtang clásico, suave y reconfortante. Walk-in only, dine-in only. <strong>Cierra a las 16:00.</strong>" },
-    { type: "Backup almuerzo", name: "Jinjuhwoegwan", kr: "진주회관", price: "~10 €/p", note: "Si Hadongkwan ya cerró o cola muy larga: kongnamul gukbap (sopa de brotes de soja con arroz), clásico de City Hall, muy suave." },
-    { type: "Cena principal", name: "Ikseon Aetteut", kr: "익선애뜻", price: "~25 €/p", note: "Cerdo a la parrilla con arroz, fusión moderna en hanok reconvertido. Reservamos Catch Table 2-3 días antes." },
-    { type: "Cena alternativa", name: "GUO", kr: "구오", price: "~18 €/p", note: "Sheng jian bao viral en Seúl. Walk-in con cola, mesas pequeñas." },
-    { type: "Cena alternativa 2", name: "Bistro Toma", kr: "토마", price: "~30 €/p", note: "Fusión japo-coreana muy estética. Reserva." }
+    { type: "Almuerzo Bib Gourmand", name: "Neungdong Minari ⭐", kr: "능동미나리", price: "~18 €/p", note: "Bib Gourmand 2025 nuevo. Gomtang de minari + yukhoe bibimbap. Servicio en 5 min. Llegar 13:00-13:30. Walk-in" },
+    { type: "Cena Bib Gourmand", name: "Ggupdang Seongsu ⭐", kr: "꿉당 성수", price: "~30 €/p", note: "Bib Gourmand. Cerdo al carbón premiado. <strong>Uno del grupo se separa a las 17:30 a apuntarse al waitlist</strong> (no aceptan reservas tradicionales, solo lista física). Jueves abre 15:00, cierra 23:00" },
+    { type: "Backup almuerzo", name: "Geumdwaeji Sikdang Seongsu", kr: "금돼지식당", price: "~25 €/p", note: "Samgyeopsal de moda, alternativa si Minari da cola muy larga. Reserva por Catch Table" },
+    { type: "Backup cena", name: "Soulmate (pizza horno de leña)", kr: "소울메이트", price: "~18 €/p", note: "Si Ggupdang imposible. Pizza napolitana en Seongsu, ambiente joven, mesas para grupos" }
   ],
   tips: [
-    { icon: "⏰", text: "<strong>Hadongkwan cierra a las 16:00</strong> (a veces antes si se acaba el caldo). Llegar como muy tarde a las 14:00. Cerrado los domingos." },
-    { icon: "💡", text: "<strong>Para 8 en Gwangjang:</strong> nos dividimos en 2 mesas de 4. Snack ligero — la cena es en Ikseon-dong." },
-    { icon: "💡", text: "Reserva en Ikseon Aetteut por Catch Table con 2-3 días de antelación — el restaurante es pequeño." },
-    { icon: "🚻", text: "Baños públicos: COEX, DDP y la oficina de turismo de Insadong (de paso)." }
+    { icon: "🚇", text: "<strong>Día sin transbordos:</strong> Hongik Univ → Ttukseom (ida), Seongsu → Hongik Univ (vuelta). Todo L2 directa" },
+    { icon: "⏰", text: "<strong>Estrategia Ggupdang para 8:</strong> uno del grupo se separa a las 17:30 desde LCDC y va a apuntarse al waitlist en persona. El resto llega a las 19:15 cuando llamen" },
+    { icon: "🎤", text: "Si os mola el K-pop, en KWANGYA hay máquina de fotos con idols (aespa, NCT, Riize) — 4-5 € por foto impresa, muy buen souvenir" },
+    { icon: "📍", text: "<strong>Dior y Tamburins están puerta a puerta</strong>. Se hacen en 45 min los dos" },
+    { icon: "🚖", text: "Si alguien se cansa entre stops: Kakao T taxi 2-3 € entre puntos de Seongsu" },
+    { icon: "🏮", text: "<strong>Recordar:</strong> reubicar el reconocimiento del recorrido de farolillos del DDP a otro día" }
   ]
 },
     {
