@@ -328,69 +328,131 @@ window.ITINERARY = {
         { icon: "🥩", text: "El <strong>galbi de Suwon</strong> es el plato de la ciudad — el rey Jeongjo lo popularizó. Si comemos galbi en algún sitio del viaje, mejor aquí que en Seúl." }
       ]
     },
-
+{
+  n: 5, dow: "Sáb", date: "16 may", neighborhood: "Yongsan → Hongdae → Jongno", festival: true,
+  title: "⭐⭐⭐ War Memorial + Yeondeunghoe (Patrimonio UNESCO)",
+  summary: "EL día. <strong>Mañana</strong>: War Memorial of Korea en Yongsan (museo nacional, gratis, ruta directa L6 sin transbordo). <strong>Mediodía</strong>: comida tranquila en Yongsan y vuelta a Hongdae para descanso obligatorio. <strong>Noche</strong>: el evento estrella — Yeondeunghoe, festival budista UNESCO con 1.200+ años de tradición. Desfile de 3,5 km por Jongno con ~20.000 participantes y miles de farolillos hechos a mano.",
+  walked: "~7 km + 2,5 h de pie",
+  schedule: [
+    { time: "08:15", act: "Desayuno rápido en Hongdae", area: "Hongdae", cost: "7 €/p", note: "Cafetería o panadería local. Hoy madrugamos: museo + festival nocturno = día largo." },
+    { time: "09:00", act: "Metro Hongik Univ (L6) → Samgakji", area: "→ Yongsan", cost: "1.500 KRW", note: "L6 directo sin transbordo, ~22 min. Salida 12 de Samgakji, 5 min andando." },
+    { time: "09:30", act: "⭐⭐ War Memorial of Korea — apertura", area: "Yongsan", cost: "GRATIS", note: "Abre 9:30. Ruta: exterior 30 min → Memorial Hall 20 min → Korean War Room III 60 min. Hay ascensores y bancos en todas las salas. Salimos a las 11:45 SÍ O SÍ." },
+    { time: "11:45", act: "Bajada andando a Sinyongsan (10 min) o taxi", area: "Yongsan", cost: "—", note: "Hangang-daero es donde están los buenos restaurantes" },
+    { time: "12:15", act: "Almuerzo en Yongsan (ver opciones)", area: "Yongsan", cost: "15-25 €/p", note: "Algo mediano — NO KBBQ pesado, hoy hay desfile hasta las 23h" },
+    { time: "13:45", act: "Metro Sinyongsan (L4) → Samgakji → Hongik (L6)", area: "→ Hongdae", cost: "1.500 KRW", note: "Alternativa: taxi directo 25 min ~12 €. Con grupo grande y abuelos, taxi" },
+    { time: "14:30", act: "Vuelta apartamento, DESCANSO OBLIGATORIO", area: "Hongdae", cost: "—", note: "1-2h. Dormir si hace falta. Hidratarse. CRÍTICO antes del desfile" },
+    { time: "16:30", act: "Metro Hongik → Anguk (transbordo Euljiro 3-ga)", area: "→ Anguk", cost: "1.500 KRW", note: "Salimos 15 min antes por si va lleno" },
+    { time: "17:00", act: "⭐ Templo Jogyesa (lanterns de día)", area: "Insadong", cost: "Gratis", note: "Ver decoración del festival con luz. Ver detalle abajo." },
+    { time: "18:00", act: "Cena rápida en Insadong (ver opciones)", area: "Insadong", cost: "12-18 €/p", note: "Comida sencilla, después se llena. RÁPIDO: a las 18:30 estamos buscando sitio" },
+    { time: "18:30", act: "Ocupamos sitio en Jongno (Jonggak-Jongno 3-ga)", area: "Jongno", cost: "—", note: "Acera o cafetería con vistas — ver Plan B lluvia" },
+    { time: "19:00", act: "⭐⭐ INICIO DEL DESFILE — Heunginjimun", area: "Jongno", cost: "Gratis", note: "20.000 participantes, 60+ organizaciones" },
+    { time: "19-21:30", act: "Desfile (Heunginjimun → Jongno → Jogyesa)", area: "Jongno", cost: "Gratis", note: "Ver hitos horarios abajo" },
+    { time: "21:30", act: "Daedong Hanmadang (post-fiesta) en Jonggak", area: "Jonggak", cost: "Gratis", note: "Pétalos rosas, ganggangsullae circle dance" },
+    { time: "22:00", act: "Metro vuelta o taxi (metros saturados)", area: "→ Hongdae", cost: "1.500 / 15 €", note: "El metro a esa hora va lleno" }
+  ],
+  stops: [
     {
-      n: 5, dow: "Sáb", date: "16 may", neighborhood: "Hongdae → Jongno", festival: true,
-      title: "⭐⭐⭐ Desfile de Farolillos de Loto",
-      summary: "EL día. Mañana muy tranquila y horizontal en Hongdae para reservar piernas. Tarde-noche es el evento estrella: el desfile que recorre 3,5 km de Jongno con miles de farolillos hechos a mano. PATRIMONIO INMATERIAL UNESCO.",
-      walked: "~6 km + 2,5 h de pie",
-      schedule: [
-        { time: "10:30", act: "Brunch tortitas infladas en Hongdae/Yeonnam", area: "Hongdae", cost: "12 €/p", note: "Pancake Originals o Layered" },
-        { time: "12:00", act: "Paseo Mangwon Market (15 min andando)", area: "Mangwon", cost: "Gratis", note: "Mercado local auténtico, no turístico" },
-        { time: "13:30", act: "Almuerzo callejero en Mangwon", area: "Mangwon", cost: "8-10 €/p", note: "Tteokbokki, hotteok, mandu, fritos" },
-        { time: "14:30", act: "Vuelta apartamento, descanso obligatorio", area: "Hongdae", cost: "—", note: "1-2h. Dormir si hace falta. Hidratarse" },
-        { time: "16:30", act: "Metro Hongik → Anguk (transbordo Euljiro 3-ga)", area: "→ Anguk", cost: "1.500 KRW", note: "Salimos 15 min antes por si va lleno" },
-        { time: "17:00", act: "⭐ Templo Jogyesa (lanterns de día)", area: "Insadong", cost: "Gratis", note: "Ver decoración del festival con luz" },
-        { time: "18:00", act: "Cena rápida en Insadong (kalguksu o jjigae)", area: "Insadong", cost: "12 €/p", note: "Comida sencilla, después se llena" },
-        { time: "19:00", act: "⭐⭐ INICIO DEL DESFILE — ubicaros en Jongno", area: "Jongno", cost: "Gratis", note: "Ver detalle abajo" },
-        { time: "19-21:30", act: "Desfile (Heunginjimun → Jongno → Jogyesa)", area: "Jongno", cost: "Gratis", note: "Pasa lentamente; no hay que moverse" },
-        { time: "21:30", act: "Daedong Hanmadang (post-fiesta) en Jonggak", area: "Jonggak", cost: "Gratis", note: "Pétalos rosas, ganggangsullae circle dance" },
-        { time: "22:00", act: "Metro vuelta o taxi (metros saturados)", area: "→ Hongdae", cost: "1.500 / 15 €", note: "El metro a esa hora va lleno" }
+      name: "War Memorial of Korea", kr: "전쟁기념관",
+      desc: "<strong>Museo nacional gratuito.</strong> Cubre la historia militar de Corea desde la edad de bronce hasta la guerra de Corea (1950-53). Construido sobre el antiguo cuartel general del ejército surcoreano. <strong>Exterior:</strong> ~100 piezas de hardware militar (tanques, helicópteros, B-52 — uno de tres expuestos fuera de EE.UU., réplica del barco-tortuga del almirante Yi Sun-sin). <strong>Interior:</strong> 6 salas, Memorial Hall (lista de caídos en mármol negro), Korean War Room III con relato cronológico. Sábado 9:30-18:00. <strong>Visitas guiadas en inglés:</strong> 10:00 y 14:00 en la Korean War Room. 2h máximo: si lo hacemos a fondo se nos van 3 y reventamos a los abuelos.",
+      group_stories: [
+        "<strong>Statue of Brothers (lo primero que veréis):</strong> 11m de alto, 18m de ancho. Inaugurada en 1994 por el escultor Choi Young-jeep. Está basada en una historia REAL: dos hermanos coreanos, el mayor Park Gyu-cheol (teniente segundo de la 8ª División surcoreana) y el menor Park Yong-cheol (soldado de la 8ª División norcoreana), se encontraron luchando uno contra otro en la batalla de Chiak Hill, en Wonju. La estatua captura el momento del reencuentro. La <strong>cúpula agrietada</strong> bajo los hermanos simboliza la división de Corea — la grieta NO es un defecto, es deliberada. Dentro de la cúpula hay un mapa con los 16 países de la ONU que enviaron tropas. Fue la inspiración de la película <em>Taegukgi</em>.",
+        "<strong>El barco-tortuga (Geobukseon):</strong> es la réplica del primer <strong>barco acorazado del mundo</strong>, diseñado por el almirante Yi Sun-sin a finales del s. XVI. Lo usó en la batalla de Hansando (1592) contra los japoneses de Hideyoshi y los machacó. Yi Sun-sin es el héroe nacional coreano absoluto — equivalente a Nelson para los británicos.",
+        "<strong>Memorial Hall:</strong> los nombres están grabados en mármol negro. Recientemente se añadieron los 6 marineros caídos en la <strong>Segunda Batalla de Yeonpyeong (2002)</strong> y los 46 del hundimiento del <strong>Cheonan (2010)</strong> — confirmaciones de que la guerra técnicamente nunca terminó (armisticio del 53, no tratado de paz)."
       ],
-      stops: [
-        {
-          name: "Mangwon Market", kr: "망원시장",
-          desc: "Mercado local auténtico, no turístico, a 15 min andando del apartamento. Probar: chamchi gimbap, mandu fritos, hotteok dulce, fish cakes en caldo. Mucho más relajado que Gwangjang.",
-          lat: 37.5559018, lng: 126.9062854,
-          place_id: "ChIJA6gxryiZfDURJvmbeBvdz_Y",
-          photo: "https://lh3.googleusercontent.com/places/ANXAkqGhYIujmfkBt_FdPTv-GGK914EuKaVOfIY1oTxAncSCnd0AicnB-8FypPsm80ESDTc2vUQOcoBC6N3qSJtRL6Gm9Y36mvrALJE=s4800-w800-h600",
-          gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Mangwon_Market_Seoul.jpg/800px-Mangwon_Market_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Korean_street_food_tteokbokki.jpg/800px-Korean_street_food_tteokbokki.jpg"]
-        },
-        {
-          name: "Templo Jogyesa", kr: "조계사",
-          desc: "Cuartel general del budismo Jogye en Corea. La semana del festival lo llenan de <strong>miles de farolillos formando un techo de colores</strong>. Verlo de día nnos ahorra el atasco de la noche cuando termina el desfile aquí.",
-          lat: 37.5738369, lng: 126.982202,
-          place_id: "ChIJHYhJ5OmifDURMOSQ2D-6lFY",
-          photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZM7hcD-y1UpNkSYwo9rhp0TesHnzDRVrZAFg8W3QmoFc03k3CCZcC3rIaIFtVx79PJlY022o3Oc9cayVJ4jyEUS1NwdotbGbOb9u5jtrUBgRdTGaTQx9dsJaffE84R_NHD0M7TDo6ox8dh2=s4800-w800-h600",
-          gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Jogyesa_temple_lanterns.jpg/800px-Jogyesa_temple_lanterns.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Jogyesa_lotus_lanterns.jpg/800px-Jogyesa_lotus_lanterns.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Jogyesa_temple_Seoul.jpg/800px-Jogyesa_temple_Seoul.jpg"]
-        },
-        {
-          name: "Inicio del desfile · Heunginjimun", kr: "흥인지문",
-          desc: "Punto de salida del Gran Desfile a las 19:00. La ruta oficial: Heunginjimun → Jongno (avenida) → Templo Jogyesa. 3,5 km de recorrido, ~2h30 de duración. Pasa por Jonggak ~20:30, termina en Jogyesa ~21:30.",
-          lat: 37.5710717, lng: 127.0096571,
-          place_id: "ChIJm6x0HTujfDURbf9iX8DtJ2A",
-          photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNBRr2-q2qIRorjp6A6ZqZAB6wu9CoTCkPO1GMZseFjOn9QTU3XjSpSCyhqoXnVeQGw-YpJK_TooZpTVp2Gqpbb2OW1qyEZi0GUNZeRn2zODb9zKmW5eD_duMfDHIhCA1C5PdOZB8xS21e4=s4800-w800-h600",
-          gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Yeondeunghoe_lotus_lantern_parade.jpg/800px-Yeondeunghoe_lotus_lantern_parade.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Lotus_lantern_festival_Seoul.jpg/800px-Lotus_lantern_festival_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Yeondeunghoe_parade_lanterns.jpg/800px-Yeondeunghoe_parade_lanterns.jpg"]
-        }
-      ],
-      festival_blocks: [
-        { tag: "Eoulim Madang", time: "16:30-18:00", title: "Calentamiento", desc: "En el estadio de Dongguk University. Si queremos verlo desde dentro, vamos hacia 16:00. NO recomendado: cansa antes del desfile principal." },
-        { tag: "Gran Desfile", time: "19:00-21:30", title: "El evento estrella", desc: "Salida desde Heunginjimun Gate. Pasa por Jonggak ~20:30 y termina en Jogyesa ~21:30." },
-        { tag: "Daedong Hanmadang", time: "21:30-23:00", title: "Post-fiesta", desc: "En el cruce de Jonggak. Danza ganggangsullae circular, pétalos de loto rosa cayendo, música tradicional." }
-      ],
-      where_to_watch: [
-        { kind: "good", title: "Recomendado", text: "Jongno entre Jonggak y Jongno 3-ga (parte intermedia). Llegamos 18:30, ocupamos acera, el desfile pasa hacia las 20:00. Ni la masa de la salida ni el embudo del final." },
-        { kind: "good", title: "Cómodo (cafetería)", text: "Cafeterías con ventanal sobre Jongno (Hollys, Starbucks Jongno). Nnos dejan ver sentados pagando solo un café. Se llenan rápido." },
-        { kind: "bad", title: "NO vamos a Heunginjimun", text: "El inicio: cuello de botella, multitud agresiva, mal vista para 2,5h de pie." },
-        { kind: "bad", title: "NO vamos al final (Jogyesa)", text: "La masa es densa al final del recorrido." }
-      ],
-      tips: [
-        { icon: "🎒", text: "<strong>Llevamos:</strong> cojín pequeño/manta para sentarnos en la acera, paraguas (el desfile sigue lloviendo), agua, snacks." },
-        { icon: "♿", text: "<strong>Movilidad limitada:</strong> vamos pronto a buscar sitio (~18:00) y montamos camp. Una vez sentados no tenemos que movernos. Salida metro Jonggak (L1 salida 1) es la más cómoda." },
-        { icon: "🍰", text: "<strong>Plan B:</strong> comprar el café en cafetería con vistas a Jongno y nos sentamos dentro — mejor incluso que la acera." }
-      ]
+      lat: 37.5369869, lng: 126.9771015,
+      place_id: "ChIJ8cRRtD-ifDURoBcqFZyRluE",
+      photo: "",
+      gallery: []
     },
-
+    {
+      name: "National Museum of Korea (plan B otro día)", kr: "국립중앙박물관",
+      desc: "<strong>Stop alternativo</strong> a 1,5 km del War Memorial, también en Yongsan, también gratis. Es el museo más importante de Corea — colección desde la edad de piedra hasta el siglo XX. Sábados abre hasta las 20:30 (horario extendido). Avisamos: hacerlo el mismo día que el War Memorial + festival es MATAR a los mayores. Lo dejamos como plan para otro día del viaje.",
+      lat: 37.5238506, lng: 126.9804702,
+      place_id: "ChIJN2x0fu2ifDUR51BupseGYmE",
+      photo: "",
+      gallery: []
+    },
+    {
+      name: "Templo Jogyesa", kr: "조계사",
+      desc: "<strong>Sede de la orden Jogye</strong>, la mayor secta del budismo coreano (10 millones de fieles, 1.700 años de tradición). Construido en 1910 — fue el <strong>primer templo budista dentro de las murallas de Seúl en 500 años</strong>: durante toda la dinastía Joseon (1392-1910) el budismo estuvo perseguido por el neo-confucianismo de estado, los monjes eran de la casta más baja y tenían prohibido entrar en la capital. La semana del festival llena el patio de <strong>miles de farolillos formando un techo de colores</strong>. Verlo de día nos ahorra el atasco de la noche cuando termina el desfile aquí.",
+      group_stories: [
+        "<strong>El árbol Baeksong (pino blanco):</strong> a la derecha del salón principal. 500 años, 14m alto, <strong>Monumento Natural Nº 9 de Corea</strong>. Es una especie chinesa (lacebark pine) muy rara — la trajeron misioneros chinos durante el Joseon. Crece lentísimo, raramente reproduce, por eso es tesoro nacional.",
+        "<strong>El árbol Heohwa (Chinese Scholar Tree):</strong> 450 años, 26m de alto, 4m de circunferencia — gigantesco. En frente del salón principal. Llamado 'árbol del erudito' por su forma majestuosa; en tradición coreana ahuyenta malas energías.",
+        "<strong>Daeungjeon (salón principal):</strong> construido en 1938 con madera de pino del monte Baekdu (Corea del Norte). Tres budas dorados gigantes: en el centro <strong>Shakyamuni</strong> (el Buda histórico), a la izquierda <strong>Amitabha</strong> (Paraíso Occidental), a la derecha el <strong>Buda Medicina</strong> con un cuenco — los tres juntos representan el ciclo de nacimiento, vida y muerte.",
+        "<strong>La pagoda de 10 pisos:</strong> contiene reliquias (sari) del propio Buda Sakyamuni. Las donó en 1913 el monje srilanqués Dharmapala, que las había recibido de la familia real de Tailandia. Una de las pocas pagodas con reliquia 'auténtica' fuera del sur de Asia."
+      ],
+      lat: 37.5738369, lng: 126.982202,
+      place_id: "ChIJHYhJ5OmifDURMOSQ2D-6lFY",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZM7hcD-y1UpNkSYwo9rhp0TesHnzDRVrZAFg8W3QmoFc03k3CCZcC3rIaIFtVx79PJlY022o3Oc9cayVJ4jyEUS1NwdotbGbOb9u5jtrUBgRdTGaTQx9dsJaffE84R_NHD0M7TDo6ox8dh2=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Jogyesa_temple_lanterns.jpg/800px-Jogyesa_temple_lanterns.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Jogyesa_lotus_lanterns.jpg/800px-Jogyesa_lotus_lanterns.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Jogyesa_temple_Seoul.jpg/800px-Jogyesa_temple_Seoul.jpg"]
+    },
+    {
+      name: "Inicio del desfile · Heunginjimun", kr: "흥인지문 (Dongdaemun)",
+      desc: "Salida oficial del Gran Desfile a las 19:00. Heunginjimun es la <strong>puerta este histórica</strong> de la muralla de Seúl (construida en 1396, renovada en 1869). Ruta: Heunginjimun → Jongno (avenida) → Templo Jogyesa. 3,5 km de recorrido, ~2h30 de duración.",
+      group_stories: [
+        "<strong>Qué es el Yeondeunghoe:</strong> festival budista coreano con <strong>1.200+ años de antigüedad</strong>. Primer registro histórico documentado en el año <strong>866 CE</strong> en el templo Hwangnyongsa (Gyeongju), durante la dinastía Silla. Está en el <em>Samguk Sagi</em>, el libro fundacional de la historia coreana.",
+        "<strong>Patrimonio Inmaterial UNESCO desde diciembre 2020.</strong> UNESCO destacó que 'el festival borra temporalmente las barreras sociales' y 'tiene un papel especial en superar dificultades sociales'.",
+        "<strong>Durante la dinastía Goryeo (918-1392)</strong>, el budismo era religión de estado y el Yeondeunghoe era una de las dos mayores celebraciones nacionales — los propios reyes participaban en persona.",
+        "<strong>Joseon (1392-1910) lo prohibió</strong>: con el neo-confucianismo se desmontó la infraestructura budista pública. El festival sobrevivió en privado, dentro de los templos, durante 500 años. Lo público volvió en 1975, cuando un grupo pequeño de practicantes marchó desde Jogyesa con farolillos hechos a mano.",
+        "<strong>El nombre significa literalmente</strong> 'encender la lámpara para iluminar el mundo'. La flor de loto representa pureza emergiendo del barro — perfecta metáfora budista."
+      ],
+      lat: 37.5710717, lng: 127.0096571,
+      place_id: "ChIJm6x0HTujfDURbf9iX8DtJ2A",
+      photo: "https://lh3.googleusercontent.com/place-photos/AJRVUZNBRr2-q2qIRorjp6A6ZqZAB6wu9CoTCkPO1GMZseFjOn9QTU3XjSpSCyhqoXnVeQGw-YpJK_TooZpTVp2Gqpbb2OW1qyEZi0GUNZeRn2zODb9zKmW5eD_duMfDHIhCA1C5PdOZB8xS21e4=s4800-w800-h600",
+      gallery: ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Yeondeunghoe_lotus_lantern_parade.jpg/800px-Yeondeunghoe_lotus_lantern_parade.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Lotus_lantern_festival_Seoul.jpg/800px-Lotus_lantern_festival_Seoul.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Yeondeunghoe_parade_lanterns.jpg/800px-Yeondeunghoe_parade_lanterns.jpg"]
+    }
+  ],
+  parade_milestones: [
+    { time: "19:00", point: "Heunginjimun (Dongdaemun)", note: "Salida oficial. 20.000 participantes ordenados en bloques por organización." },
+    { time: "19:20", point: "Jongno 5-ga", note: "Entrando ya en la avenida principal" },
+    { time: "19:45", point: "Jongno 3-ga (cerca de Ikseon-dong)", note: "Buena zona de visión, ya con todos los farolillos en marcha" },
+    { time: "20:15", point: "Jonggak", note: "MITAD DEL RECORRIDO — punto óptimo de visión, ya están encendidos y aún no ha empezado el embudo" },
+    { time: "20:45", point: "Templo Jogyesa (entrada)", note: "Los primeros bloques llegan al destino" },
+    { time: "21:30", point: "Cierre en Jogyesa", note: "Últimos bloques. Empieza Daedong Hanmadang en Jonggak" },
+    { time: "21:30-23:00", point: "Daedong Hanmadang en Jonggak", note: "Post-fiesta: ganggangsullae circular, pétalos de loto rosa cayendo, música tradicional" }
+  ],
+  rain_plan: [
+    { title: "Starbucks Reserve Jong-ro 51", desc: "<strong>El mejor refugio.</strong> 4.4★, 2.147 reseñas. Ventanas grandes con vista directa a Jongno, edificio de varias plantas con muchos asientos. Abre a las 8:00, cierra a las 22:00. Está justo antes de Jonggak — el desfile pasa por delante hacia las 20:00-20:30. Llegamos hacia las 18:30 con cafés/postres y nos quedamos sentados. Mejor que la acera con paraguas." },
+    { title: "Starbucks Jongno 3(sam)-ga", desc: "Alternativa más al este. Edificio estrecho (3 plantas), menos plazas pero igual de operativo. Plan B si el Reserve está petado." },
+    { title: "Cafe Jongno Market", desc: "Café local más bonito (4.4★), tiene vistas al pabellón Bosingak. Más íntimo, más caro." },
+    { title: "Estrategia general", desc: "Si llueve fuerte, no hay heroicidades — pillamos una cafetería con ventanal a Jongno, pagamos consumición y vemos el desfile sentados. Es mejor experiencia incluso sin lluvia. Para los mayores, esto es plan A, no B." }
+  ],
+  lunch_options: [
+    { name: "Sam Sam Sam", kr: "삼삼삼", area: "Yongsan", rating: "4.8★ (2.864 reseñas)", style: "Italiano-fusión", price: "18-25 €/p", why: "El más recomendado de la zona. Risotto de tinta de calamar y lasagna son las estrellas. Ambiente joven, decoración cuidada. Reservar en e-queue antes de llegar." },
+    { name: "Szimpatikus Yongsan", kr: "심파티쿠스", area: "Yongsan (Hangangno)", rating: "4.8★", style: "Italiano cómodo", price: "18-22 €/p", why: "Pasta y vino, ambiente europeo relajado. Sirve hasta las 15:00. Pega para los mayores que prefieran sabores familiares." },
+    { name: "Carnaby", kr: "카나비", area: "Yongsan", rating: "4.7★", style: "Fusión coreana moderna", price: "20-28 €/p", why: "Cocina coreana creativa, ambiente bonito. Highlights: prawn toast y arroz de tinta. Más \"experiencia\" que sustento puro." },
+    { name: "Doyajib", kr: "도야집 용산본점", area: "Yongsan", rating: "4.7★", style: "KBBQ cerdo", price: "20-25 €/p", why: "Si SÍ queréis BBQ — el cerdo del cuello es de los mejores de Seúl. AVISO: virtual queue por Catchtable, suelen ser 1h de espera." },
+    { name: "Yongsan Yookmong", kr: "용산육몽", area: "Yongsan", rating: "4.9★", style: "KBBQ alternativa", price: "20-25 €/p", why: "Mismas pegas que Doyajib pero con menos cola. El staff te asa la carne. Plan B si Doyajib está petado." },
+    { name: "Plan ligero", kr: "—", area: "Yongsan/Itaewon", rating: "—", style: "Kalguksu o jjigae cualquier sitio", price: "8-12 €/p", why: "Si los mayores van cansados después del museo: comida de cuchara, 30 min y a casa a descansar." }
+  ],
+  dinner_options: [
+    { name: "Bukchon Kalguksu", kr: "북촌칼국수", area: "Insadong", rating: "4.2★", price: "10 €/p", style: "Noodle soup + mandu", why: "La opción rápida y honesta. Lleva 10+ años en el mismo sitio. Es lo que queremos para no llegar tarde al desfile." },
+    { name: "Insa Dodam", kr: "인사도담", area: "Insadong-gil", rating: "4.5★ (790 reseñas)", price: "13-18 €/p", style: "Tradicional coreano + makgeolli", why: "Coreano tradicional bien hecho. Opciones veganas. Buen makgeolli. Abre a las 17:00 — encaja perfecto a las 18:00." },
+    { name: "Sinsa Dongindong Annyeong Insadong", kr: "신사동인동안녕인사동", area: "Insadong-gil", rating: "4.9★ (45 reseñas)", price: "15-18 €/p", style: "Costilla picante + mini-pulpo bibimbap", why: "Raciones GENEROSAS. Mejor para grupo grande con apetito. AVISO: cierra a las 20:00 — entra entre 18:00 y 19:00, no más tarde." },
+    { name: "Onmigwan Anguk", kr: "온미관 안국", area: "Anguk", rating: "4.6★", price: "12-15 €/p", style: "Mandu + naengmyeon", why: "Al lado del metro Anguk si salimos directos de Jogyesa. Mandu gigantes." },
+    { name: "Heavy Steak Anguk", kr: "헤비스테이크 안국", area: "Anguk", rating: "4.9★ (2.677 reseñas)", price: "10-15 €/p", style: "Steak en plancha", why: "Plan B si los mayores se cansaron de coreano. Steak con arroz, sopa gratis. Sale en 30 min." }
+  ],
+  festival_blocks: [
+    { tag: "Eoulim Madang", time: "16:30-18:00", title: "Calentamiento", desc: "En el estadio de Dongguk University. NO recomendado hoy: cansa antes del desfile principal y ya venimos cansados del War Memorial." },
+    { tag: "Gran Desfile", time: "19:00-21:30", title: "El evento estrella", desc: "Salida desde Heunginjimun Gate. 20.000 participantes, 60+ organizaciones. Pasa por Jonggak ~20:15-20:30 y llega a Jogyesa ~21:00-21:30." },
+    { tag: "Daedong Hanmadang", time: "21:30-23:00", title: "Post-fiesta", desc: "En el cruce de Jonggak. Danza ganggangsullae circular (también UNESCO), pétalos de loto rosa cayendo, música tradicional." }
+  ],
+  where_to_watch: [
+    { kind: "good", title: "⭐ Recomendado: Jongno entre Jonggak y Jongno 3-ga", text: "Llegamos 18:30, ocupamos acera o cafetería. El desfile pasa por aquí hacia las 20:00-20:30 — mitad de recorrido, ya están todos los farolillos encendidos y aún no se ha formado el embudo final. Ni la masa de la salida ni la del final." },
+    { kind: "good", title: "⭐ Plan A real (cafetería con ventanal)", text: "Starbucks Reserve Jong-ro 51 — ventanal grande sobre la avenida, 3 plantas, sentados con café. Para los mayores y por si llueve, ES MEJOR que la acera. Pagamos una consumición y aguantamos 2h sin problema." },
+    { kind: "bad", title: "NO vamos a Heunginjimun (salida)", text: "Cuello de botella, multitud densa al inicio, mal vista para 2,5h de pie. Es donde aglomera todo el grupo de turistas que no se ha informado." },
+    { kind: "bad", title: "NO vamos al final (Jogyesa)", text: "La masa es densa al final del recorrido. Además, ya hemos estado por la tarde tranquilos." }
+  ],
+  tips: [
+    { icon: "🏛️", text: "<strong>War Memorial — disciplina horaria:</strong> a las 11:45 SALIMOS. Si no, el descanso de tarde se evapora y los mayores llegan reventados al desfile." },
+    { icon: "🎯", text: "<strong>Qué visitar en el War Memorial sí o sí:</strong> Statue of Brothers (10 min, exterior) → Memorial Hall con nombres en mármol negro (20 min) → Korean War Room III con la cronología 1950-53 (60 min). Skippeable: salas prehistóricas y de fuerzas expedicionarias." },
+    { icon: "🎒", text: "<strong>Llevamos al desfile:</strong> cojín pequeño/manta para sentarnos en la acera, paraguas (el desfile sigue lloviendo según organizadores), agua, snacks. Mayo en Seúl llueve — vale la pena cargar paraguas." },
+    { icon: "♿", text: "<strong>Movilidad limitada:</strong> en el War Memorial hay ascensores y bancos en todas las salas. Para el desfile vamos pronto (~18:30) a la cafetería del plan B. Salida metro Jonggak (L1 salida 1) es la más cómoda." },
+    { icon: "🌧️", text: "<strong>Si llueve fuerte:</strong> directamente al Starbucks Reserve Jong-ro 51, café y ventanal. No es plan B, es plan A mejorado." },
+    { icon: "🏛️", text: "<strong>National Museum of Korea</strong> está a 1,5 km del War Memorial — los dos en la misma mañana es factible pero matador con el desfile después. Mejor a otro día." },
+    { icon: "💬", text: "<strong>Para contar al grupo:</strong> la Statue of Brothers está basada en una historia REAL (hermanos Park, batalla de Chiak Hill). El Yeondeunghoe tiene 1.200 años y es UNESCO desde 2020. El templo Jogyesa fue el primer templo budista dentro de Seúl en 500 años. Tres historias que multiplican la experiencia." }
+  ]
+},
     {
       n: 6, dow: "Dom", date: "17 may", neighborhood: "Hongdae → ICN",
       title: "Compras última hora · vuelta",
